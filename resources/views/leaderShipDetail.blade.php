@@ -109,7 +109,7 @@
 
                     <div class="leaderInfo">
                         <div class="photo">
-                            <img alt="image" src="assets/image/Director.jpg">
+                            <img alt="image" src="allStyle/image/Director.jpg">
                         </div>
 
                         <div class="description">
@@ -159,6 +159,6 @@
 @endsection
 
 
-<script src="js/bootstrap.js"></script>
+<script src="allStyle/js/bootstrap.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

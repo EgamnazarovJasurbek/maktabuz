@@ -49,7 +49,7 @@
                             <!-- Gerb -->
                             <h2 style="text-transform: uppercase;">O'zbekiston respublikasi davlat gerbi</h2>
                             <div class="col-12 text-center mt-5">
-                                <img src="assets/image/Gerb.png" alt="Img" width="20%">
+                                <img src="allStyle/image/Gerb.png" alt="Img" width="20%">
                             </div>
                             <p style="font-size: 18px; font-weight: 400;">
                                 <br> <br> Davlat gerbi O'zbekiston Respublikasining 1992-yil 2-iyuldagi 616-XII-sonli
@@ -69,7 +69,7 @@
                             <h2 style="text-transform: uppercase; margin-top: 50px;">O'zbekiston respublikasi davlat
                                 bayrog'i</h2>
                             <div class="col-12 text-center mt-5">
-                                <img src="assets/image/Flag-uz.jpg" alt="Img" width="30%">
+                                <img src="allStyle/image/Flag-uz.jpg" alt="Img" width="30%">
                             </div>
                             <p style="font-size: 18px; font-weight: 400;">
                                 <br> <br>O'zbekiston Respublikasining davlat bayrog'i O'zbekiston Respublikasining

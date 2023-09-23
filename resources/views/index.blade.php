@@ -1,7 +1,7 @@
 @extends('layouts.site')
 @section('content')
       <!-- Big logo start -->
-      <div class="bigBannerContent" style="background-image: url('assets/image/329-maktab.jpg');">
+      <div class="bigBannerContent" style="background-image: url('allStyle/image/329-maktab.jpg');">
         <div class="bannerContent">
             <div class="container-fluid">
                 <div class="row">
@@ -36,7 +36,7 @@
         <div class="mainServicesList">
             <a href="#">
                 <div class="icon">
-                    <img alt="icon" src="assets/image/oquvchi.png" width="45%" style="margin-left: 60px;">
+                    <img alt="icon" src="allStyle/image/oquvchi.png" width="45%" style="margin-left: 60px;">
                 </div>
                 <h1>O'quvchilarga</h1>
                 <div class="description">
@@ -50,7 +50,7 @@
             </a>
             <a href="#">
                 <div class="icon">
-                    <img alt="icon" src="assets/image/Ota-ona.png" width="45%" style="margin-left: 75px;">
+                    <img alt="icon" src="allStyle/image/Ota-ona.png" width="45%" style="margin-left: 75px;">
                 </div>
                 <h1>Ota-onalarga</h1>
                 <div class="description">
@@ -61,7 +61,7 @@
             </a>
             <a href="#">
                 <div class="icon">
-                    <img alt="icon" src="assets/image/oqtuvchi.png" width="45%" style="margin-left: 80px;">
+                    <img alt="icon" src="allStyle/image/oqtuvchi.png" width="45%" style="margin-left: 80px;">
                 </div>
                 <h1>O'qituvchilarga</h1>
                 <div class="description">
@@ -129,7 +129,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 wow fadeInRight" data-wow-duration=".9s" data-wow-delay=".6s">
                     <div class="onlineSchool__img">
-                        <img src="assets/image/onlineSchool2.png" width="75%" alt="OnlineSchool">
+                        <img src="allStyle/image/onlineSchool2.png" width="75%" alt="OnlineSchool">
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
                     <a href="#">
                         <div class="imageBox">
-                            <img alt="image" src="assets/image/329-maktab.jpg" width="170px">
+                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
                         </div>
                         <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
                         <span>04 Oktabr 2021</span>
@@ -153,7 +153,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
                     <a href="#">
                         <div class="imageBox">
-                            <img alt="image" src="assets/image/329-maktab.jpg" width="170px">
+                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
                         </div>
                         <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
                         <span>04 Oktabr 2021</span>
@@ -162,7 +162,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
                     <a href="#">
                         <div class="imageBox">
-                            <img alt="image" src="assets/image/329-maktab.jpg" width="170px">
+                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
                         </div>
                         <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
                         <span>04 Oktabr 2021</span>
@@ -171,7 +171,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
                     <a href="#">
                         <div class="imageBox">
-                            <img alt="image" src="assets/image/329-maktab.jpg" width="170px">
+                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
                         </div>
                         <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
                         <span>04 Oktabr 2021</span>
@@ -180,7 +180,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
                     <a href="#">
                         <div class="imageBox">
-                            <img alt="image" src="assets/image/329-maktab.jpg" width="170px">
+                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
                         </div>
                         <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
                         <span>04 Oktabr 2021</span>
@@ -189,7 +189,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
                     <a href="#">
                         <div class="imageBox">
-                            <img alt="image" src="assets/image/329-maktab.jpg" width="170px">
+                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
                         </div>
                         <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
                         <span>04 Oktabr 2021</span>
@@ -288,43 +288,43 @@
                 <div class="slider">
                     <a href="">
                         <div class="slider_content">
-                            <img src="assets/image/gerb_slider.jpg" width="10%" alt="Image 1">
+                            <img src="allStyle/image/gerb_slider.jpg" width="10%" alt="Image 1">
                             <h1>O'zbekiston respulikasi davlat maktabi 1</h1>
                         </div>
                     </a>
                     <a href="">
                         <div class="slider_content">
-                            <img src="assets/image/Oliy majlis.jpg" width="10%" alt="Image 1">
+                            <img src="allStyle/image/Oliy majlis.jpg" width="10%" alt="Image 1">
                             <h1>O'zbekiston Respublikasi hukumat portali</h1>
                         </div>
                     </a>
                     <a href="">
                         <div class="slider_content">
-                            <img src="assets/image/mygovUz.jpg" width="10%" alt="Image 1">
+                            <img src="allStyle/image/mygovUz.jpg" width="10%" alt="Image 1">
                             <h1>Yagona interaktiv davlat xizmatlari</h1>
                         </div>
                     </a>
                     <a href="">
                         <div class="slider_content">
-                            <img src="assets/image/gerb_slider.jpg" width="10%" alt="Image 1">
+                            <img src="allStyle/image/gerb_slider.jpg" width="10%" alt="Image 1">
                             <h1>O'zbekiston respulikasi davlat maktabi 1</h1>
                         </div>
                     </a>
                     <a href="">
                         <div class="slider_content">
-                            <img src="assets/image/gerb_slider.jpg" width="10%" alt="Image 1">
+                            <img src="allStyle/image/gerb_slider.jpg" width="10%" alt="Image 1">
                             <h1>O'zbekiston respulikasi davlat maktabi 1</h1>
                         </div>
                     </a>
                     <a href="">
                         <div class="slider_content">
-                            <img src="assets/image/gerb_slider.jpg" width="10%" alt="Image 1">
+                            <img src="allStyle/image/gerb_slider.jpg" width="10%" alt="Image 1">
                             <h1>O'zbekiston respulikasi Prezidentining virtual portali</h1>
                         </div>
                     </a>
                     <a href="">
                         <div class="slider_content">
-                            <img src="assets/image/mygovUz.jpg" width="10%" alt="Image 1">
+                            <img src="allStyle/image/mygovUz.jpg" width="10%" alt="Image 1">
                             <h1>Respulika Bolalar kutubxonasi</h1>
                         </div>
                     </a>

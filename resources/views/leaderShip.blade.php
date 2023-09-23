@@ -122,7 +122,7 @@
             <!-- Direktor -->
             <div class="container">
                 <a href="leaderShipDetail.html" class="mainLeader">
-                    <img alt="Director" src="assets/image/Director.jpg">
+                    <img alt="Director" src="allStyle/image/Director.jpg">
                     <div class="details">
                         <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
                         <span>Maktab direktori</span>
@@ -137,7 +137,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                         <a href="leaderShipDetail.html" class="deputy_director-main">
-                            <img src="assets/image/Director.jpg" width="60%" alt="Zam Director">
+                            <img src="allStyle/image/Director.jpg" width="60%" alt="Zam Director">
                             <div class="deputy_director-details">
                                 <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
                                 <span>Zam direktor</span>
@@ -146,7 +146,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                         <a href="leaderShipDetail.html" class="deputy_director-main">
-                            <img src="assets/image/Director.jpg" width="60%" alt="Zam Director">
+                            <img src="allStyle/image/Director.jpg" width="60%" alt="Zam Director">
                             <div class="deputy_director-details">
                                 <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
                                 <span>M'anaviyatchi</span>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                         <a href="leaderShipDetail.html" class="deputy_director-main">
-                            <img src="assets/image/Director.jpg" width="60%" alt="Zam Director">
+                            <img src="allStyle/image/Director.jpg" width="60%" alt="Zam Director">
                             <div class="deputy_director-details">
                                 <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
                                 <span>Bo'lim boshlig'i</span>
@@ -164,7 +164,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                         <a href="leaderShipDetail.html" class="deputy_director-main">
-                            <img src="assets/image/Director.jpg" width="60%" alt="Zam Director">
+                            <img src="allStyle/image/Director.jpg" width="60%" alt="Zam Director">
                             <div class="deputy_director-details">
                                 <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
                                 <span>Yoshlar yetakchisi</span>

@@ -56,7 +56,7 @@
                     <div class="projectsList">
 
                         <a class="item" href="{{ route('usefulResursDetail') }}">
-                            <img alt="logo" src="assets/image/Useful-links.jpg">
+                            <img alt="logo" src="allStyle/image/Useful-links.jpg">
                             <div class="description">
                                 <h1>Edukids</h1>
                                 <h3>EduKids - o‘quvchi-yoshlar uchun mo‘ljallangan bo‘lib, yosh avlodni kelajakda
@@ -68,7 +68,7 @@
                         </a>
 
                         <a class="item" href="{{ route('usefulResursDetail') }}">
-                            <img alt="logo" src="assets/image/Useful-links.jpg">
+                            <img alt="logo" src="allStyle/image/Useful-links.jpg">
                             <div class="description">
                                 <h1>Maktab.uz</h1>
                                 <h3>Masofaviy ta’lim platformasi. Ushbu platforma masofaviy ta’lim jarayonini amaliyotga
@@ -80,7 +80,7 @@
                         </a>
 
                         <a class="item" href="{{ route('usefulResursDetail') }}">
-                            <img alt="logo" src="assets/image/Useful-links.jpg">
+                            <img alt="logo" src="allStyle/image/Useful-links.jpg">
                             <div class="description">
                                 <h1>Uzbekcoders.uz</h1>
                                 <h3>Dasturlashni o‘rganish uchun ochiq va bepul onlayn platforma.Ushbu onlayn
@@ -92,7 +92,7 @@
                         </a>
 
                         <a class="item" href="{{ route('usefulResursDetail') }}">
-                            <img alt="logo" src="assets/image/Useful-links.jpg">
+                            <img alt="logo" src="allStyle/image/Useful-links.jpg">
                             <div class="description">
                                 <h1>Onlinedu.uz</h1>
                                 <h3>Uzluksiz kasbiy ta’lim platformasi.
@@ -101,7 +101,7 @@
                         </a>
 
                         <a class="item" href="{{ route('usefulResursDetail') }}">
-                            <img alt="logo" src="assets/image/Useful-links.jpg">
+                            <img alt="logo" src="allStyle/image/Useful-links.jpg">
                             <div class="description">
                                 <h1>Ish.uzedu.uz</h1>
                                 <h3>Ushbu tizim bo‘sh ish o‘rinlari bo‘yicha ma’lumotlarni e’lon qilish va malakali
@@ -111,7 +111,7 @@
                         </a>
 
                         <a class="item" href="#">
-                            <img alt="logo" src="assets/image/Useful-links.jpg">
+                            <img alt="logo" src="allStyle/image/Useful-links.jpg">
                             <div class="description">
                                 <h1>Smartland</h1>
                                 <h3>Interfaol virtual ta’lim platformasi. Ushbu ta’lim platformasi orqali bolalar bo‘sh

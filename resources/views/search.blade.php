@@ -55,7 +55,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <a href="">
                                     <div class="imageBox">
-                                        <img alt="image" src="assets/image/It live logo for red-04-04.png">
+                                        <img alt="image" src="allStyle/image/It live logo for red-04-04.png">
                                     </div>
                                     <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga
                                         marhamat!
@@ -66,7 +66,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <a href="">
                                     <div class="imageBox">
-                                        <img alt="image" src="assets/image/It live logo for red-04-04.png">
+                                        <img alt="image" src="allStyle/image/It live logo for red-04-04.png">
                                     </div>
                                     <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga
                                         marhamat!
@@ -77,7 +77,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <a href="">
                                     <div class="imageBox">
-                                        <img alt="image" src="assets/image/It live logo for red-04-04.png">
+                                        <img alt="image" src="allStyle/image/It live logo for red-04-04.png">
                                     </div>
                                     <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga
                                         marhamat!

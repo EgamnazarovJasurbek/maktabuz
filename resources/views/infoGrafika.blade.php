@@ -48,7 +48,7 @@
             <div class="item">
                 <a href="#">
                     <div class="imageBox">
-                        <img src="assets/image/InfoGrafika-1.jpg">
+                        <img src="allstyle/image/InfoGrafika-1.jpg">
                     </div>
                     <div class="descriptionBox">
                         <h1>Axborot tizimlari va elektron resurslar</h1>
@@ -59,7 +59,7 @@
             <div class="item">
                 <a href="#">
                     <div class="imageBox">
-                        <img src="assets/image/InfoGrafika-2.jpg">
+                        <img src="allstyle/image/InfoGrafika-2.jpg">
                     </div>
                     <div class="descriptionBox">
                         <h1>Axborot tizimlari va elektron resurslar</h1>
@@ -70,7 +70,7 @@
             <div class="item">
                 <a href="#">
                     <div class="imageBox">
-                        <img src="assets/image/InfoGrafika-3.jpg">
+                        <img src="allstyle/image/InfoGrafika-3.jpg">
                     </div>
                     <div class="descriptionBox">
                         <h1>Axborot tizimlari va elektron resurslar</h1>

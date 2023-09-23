@@ -109,7 +109,7 @@
 
                 <div class="leaderInfo">
                     <div class="photo">
-                        <img alt="image" src="image/shaxmat.jpg" class="mt-5 me-4">
+                        <img alt="image" src="allStyle/image/shaxmat.jpg" class="mt-5 me-4">
                     </div>
 
                     <div class="description">

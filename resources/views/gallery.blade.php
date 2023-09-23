@@ -44,13 +44,13 @@
                 <h1 class="gallery_title">Maktab Galereyasi</h1>
                 <div class="row">
                     <div class="col-12 mb-2">
-                        <img src="assets/image/329-maktab.jpg" alt="Img" width="100%" height="90%">
+                        <img src="allStyle/image/329-maktab.jpg" alt="Img" width="100%" height="90%">
                     </div>
                     <div class="col-12 mb-2">
-                        <img src="assets/image/ImgChidlrens.jpg" alt="Img" width="100%" height="90%">
+                        <img src="allStyle/image/ImgChidlrens.jpg" alt="Img" width="100%" height="90%">
                     </div>
                     <div class="col-12 mb-2">
-                        <img src="assets/image/img_zoom.jpg" alt="Img" width="100%" height="90%">
+                        <img src="allStyle/image/img_zoom.jpg" alt="Img" width="100%" height="90%">
                     </div>
                 </div>
             </div>

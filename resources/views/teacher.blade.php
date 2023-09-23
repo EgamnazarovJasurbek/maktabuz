@@ -48,7 +48,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>Zam direktor</span>
@@ -57,7 +57,7 @@
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>M'anaviyatchi</span>
@@ -66,7 +66,7 @@
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>Bo'lim boshlig'i</span>
@@ -81,7 +81,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>Zam direktor</span>
@@ -90,7 +90,7 @@
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>M'anaviyatchi</span>
@@ -99,7 +99,7 @@
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>Bo'lim boshlig'i</span>
@@ -114,7 +114,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>Zam direktor</span>
@@ -123,7 +123,7 @@
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>M'anaviyatchi</span>
@@ -132,7 +132,7 @@
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>Bo'lim boshlig'i</span>
@@ -147,7 +147,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>Zam direktor</span>
@@ -156,7 +156,7 @@
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>M'anaviyatchi</span>
@@ -165,7 +165,7 @@
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-6">
                                 <a href="#" class="deputy_director-main">
-                                    <img src="assets/image/Teachers.jpg" width="90%" alt="Zam Director">
+                                    <img src="allStyle/image/Teachers.jpg" width="90%" alt="Zam Director">
                                     <div class="deputy_director-details">
                                         <h1><b>Rustamov</b><br>Rustam<br>Rustamovich</h1>
                                         <span>Bo'lim boshlig'i</span>

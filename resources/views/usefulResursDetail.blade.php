@@ -45,7 +45,7 @@
                 <div class="container">
                     <div class="pageView">
                         <div class="projectView">
-                            <img alt="logo" src="assets/image/Useful-links-Detail.jpg">
+                            <img alt="logo" src="allStyle/image/Useful-links-Detail.jpg">
 
                             <div class="description">
                                 <h1 class="simpleTitle">Attestat.uzedu.uz</h1>

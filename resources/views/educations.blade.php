@@ -86,7 +86,7 @@
                                 <a href="{{ asset('oneshifts/file/' . $oneshift->image) }}">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>1-sinf dars jadvali</span>
                                     </div>
@@ -98,7 +98,7 @@
                                 {{-- <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>3-sinf dars jadvali</span>
                                     </div>
@@ -108,7 +108,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>4-sinf dars jadvali</span>
                                     </div>
@@ -118,7 +118,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>5-sinf dars jadvali</span>
                                     </div>
@@ -128,7 +128,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>8-sinf dars jadvali</span>
                                     </div>
@@ -138,7 +138,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>9-sinf dars jadvali</span>
                                     </div>
@@ -148,7 +148,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>10-sinf dars jadvali</span>
                                     </div>
@@ -158,7 +158,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>11-sinf dars jadvali</span>
                                     </div>
@@ -168,7 +168,7 @@
                                 {{-- <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Dars soatlari</span>
                                     </div>
@@ -182,7 +182,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>2-sinf dars jadvali</span>
                                     </div>
@@ -192,7 +192,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>6-sinf dars jadvali</span>
                                     </div>
@@ -202,7 +202,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>7-sinf dars jadvali</span>
                                     </div>
@@ -212,7 +212,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Dars soatlari</span>
                                     </div>
@@ -226,7 +226,7 @@
                                 <a href="">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Hunarmandlar</span>
                                     </div>
@@ -236,7 +236,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Sehrli qo'llar</span>
                                     </div>
@@ -246,7 +246,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Mohir qo'llar</span>
                                     </div>
@@ -256,7 +256,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Dasturchilar</span>
                                     </div>
@@ -266,7 +266,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Matematiklar</span>
                                     </div>
@@ -276,7 +276,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Yosh kimyogarlar </span>
                                     </div>
@@ -286,7 +286,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Yosh biolog</span>
                                     </div>
@@ -296,7 +296,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Al Xorazmiy avlodlari</span>
                                     </div>
@@ -310,7 +310,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Milliy Kurash </span>
                                     </div>
@@ -320,7 +320,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Futbol</span>
                                     </div>
@@ -330,7 +330,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Voleybol</span>
                                     </div>
@@ -340,7 +340,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Dzyudo</span>
                                     </div>
@@ -350,7 +350,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Taekvando</span>
                                     </div>
@@ -360,7 +360,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Regbi</span>
                                     </div>
@@ -370,7 +370,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Badiiy Gimnastika</span>
                                     </div>
@@ -380,7 +380,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Shaxmat</span>
                                     </div>
@@ -390,7 +390,7 @@
                                 <a href="#">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="assets/image/book svg.jfif">
+                                            <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
                                         <span>Harakatli o'yinlar</span>
                                     </div>

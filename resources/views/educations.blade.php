@@ -3,14 +3,14 @@
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;
-            top: 14%;
+            top: 14% !important;
             right: 35%;
             color: black;
         }
 
         .additionalFuntions {
             position: absolute;
-            top: 24%;
+            top: 24% !important;
             right: 3%;
         }
 
@@ -30,11 +30,11 @@
     <div class="mainContent withImage">
         <div class="imageHeader" style="padding-bottom: 0px;">
             <div class="container">
-                <h1 class="pageTitle text-dark">Ta'lim</h1>
+                <h1 class="pageTitle text-dark">@lang('words.education')</h1>
                 <nav aria-label="breadcrumb">
                     <ol id="w5" class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Asosiy</a></li>
-                        <li class="breadcrumb-item " aria-current="page">Ta'lim</li>
+                        <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
+                        <li class="breadcrumb-item " aria-current="page">@lang('words.education')</li>
                     </ol>
                 </nav>
             </div>
@@ -57,22 +57,22 @@
 
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link show active" data-toggle="tab" href="#tab1" role="tab"
-                                    aria-selected="true">1-smena</a>
+                                    aria-selected="true">1-@lang('words.smena')</a>
                             </li>
 
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" data-toggle="tab" href="#tab2" role="tab"
-                                    aria-selected="false">2-smena</a>
+                                    aria-selected="false">2-@lang('words.smena')</a>
                             </li>
 
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" data-toggle="tab" href="#tab3" role="tab"
-                                    aria-selected="false">Qo‘shimcha darslar</a>
+                                    aria-selected="false">@lang('words.qoshimchaDars')</a>
                             </li>
 
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link " data-toggle="tab" href="#tab4" role="tab"
-                                    aria-selected="true">Sport to'garaklari</a>
+                                    aria-selected="true">@lang('words.sportTogarak')</a>
                             </li>
 
                         </ul>
@@ -82,7 +82,7 @@
                         <!-- 1  --  SMENA -->
                         <div class="tab-pane fade active show" id="tab1" role="tabpanel">
                             <div class="servicesList">
-                                @foreach ($oneshifts as $oneshift)
+                                {{-- @foreach ($oneshifts as $oneshift)
                                 <a href="{{ asset('oneshifts/file/' . $oneshift->image) }}">
                                     <div>
                                         <div class="icon">
@@ -92,10 +92,10 @@
                                     </div>
                                     <span>1-sinf dars jadvali</span>
                                 </a>
-                                @endforeach
+                                @endforeach --}}
                                
 
-                                {{-- <a href="#">
+                                <a href="#">
                                     <div>
                                         <div class="icon">
                                             <img alt="icon" src="allStyle/image/book svg.jfif">
@@ -163,9 +163,9 @@
                                         <span>11-sinf dars jadvali</span>
                                     </div>
                                     <span>11-sinf dars jadvali</span>
-                                </a> --}}
+                                </a>
 
-                                {{-- <a href="#">
+                                <a href="#">
                                     <div>
                                         <div class="icon">
                                             <img alt="icon" src="allStyle/image/book svg.jfif">
@@ -173,9 +173,11 @@
                                         <span>Dars soatlari</span>
                                     </div>
                                     <span>Dars soatlari</span>
-                                </a> --}}
+                                </a>
                             </div>
                         </div>
+
+
                         <!-- 2  --  SMENA -->
                         <div class="tab-pane fade" id="tab2" role="tabpanel">
                             <div class="servicesList">

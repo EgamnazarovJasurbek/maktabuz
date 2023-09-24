@@ -57,6 +57,7 @@ Route::get('/stateSymbols', [MainController::class, 'stateSymbols'])->name('stat
 Route::get('/teacher', [MainController::class, 'teacher'])->name('teacher');
 Route::get('/usefulResurs', [MainController::class, 'usefulResurs'])->name('usefulResurs');
 Route::get('/usefulResursDetail', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
+Route::get('/newsDetail', [MainController::class, 'newsDetail'])->name('newsDetail');
 
 
 Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () {

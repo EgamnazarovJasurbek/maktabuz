@@ -4,14 +4,14 @@
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;
-            top: 14%;
+            top: 14% !important;
             right: 35%;
             color: black;
         }
 
         .additionalFuntions {
             position: absolute;
-            top: 24%;
+            top: 24% !important;
             right: 3%;
         }
     }
@@ -24,11 +24,11 @@
     <div class="mainContent withImage">
         <div class="imageHeader" style="padding-bottom: 0px;">
             <div class="container">
-                <h1 class="pageTitle text-dark">Rekvizitlar</h1>
+                <h1 class="pageTitle text-dark">@lang('words.rekvizit')</h1>
                 <nav aria-label="breadcrumb">
                     <ol id="w5" class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Asosiy</a></li>
-                        <li class="breadcrumb-item " aria-current="page">Rekvizitlar</li>
+                        <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
+                        <li class="breadcrumb-item " aria-current="page">@lang('words.rekvizit')</li>
                     </ol>
                 </nav>
             </div>
@@ -49,18 +49,18 @@
                     <p><strong>Federal byudjet daromadiga mablag' o'tkazish uchun Bosh daromad ma'muri sifatida
                             Vazirlikning rekvizitlari:</strong></p>
 
-                    <p>Qabul qiluvchi: mintaqalararo operatsion UFK (O'zbekiston Respublikasi&nbsp; Xalq ta'limi
+                    <p>@lang('words.qabulQiluvci'): mintaqalararo operatsion UFK (O'zbekiston Respublikasi&nbsp; Xalq ta'limi
                         vazirligi)</p>
 
                     <p>INN: 9710062939</p>
 
                     <p>KPP: 771001001</p>
 
-                    <p>Bank nomi: Aloqabank, Toshkent</p>
+                    <p>@lang('words.bankName'): Aloqabank, Toshkent</p>
 
                     <p>BIK: 24501901</p>
 
-                    <p>Hisob 3100643000000019500</p>
+                    <p>@lang('words.hisob'): 3100643000000019500</p>
                     <p></p>
                 </div>
             </div>

@@ -22,8 +22,8 @@ class MainController extends Controller
    }
    public function educations()
    {
-      $oneshifts = One_shift::all();
-      return view('educations', compact('oneshifts'));
+      // $oneshifts = One_shift::all();
+      return view('educations');
    }
    public function faqs()
    {
@@ -80,5 +80,9 @@ class MainController extends Controller
    public function educationDetails()
    {
       return view('educationDetails');
+   }
+   public function newsDetail()
+   {
+      return view('newsDetail');
    }
 }

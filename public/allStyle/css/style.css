@@ -324,6 +324,12 @@ ul li {
 
 .menu li ul li a {
     color: #fff;
+    padding: 5px;
+    font-size: 17px;
+}
+.additional-lessons{
+    font-size: 15px !important;
+    padding-left:1px !important ;
 }
 
 .menu li:hover ul {
@@ -2133,3 +2139,37 @@ a.it_live-logo {
 }
 
 /* Search End */
+
+
+/* News Details Start*/
+
+.headerArea {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin-bottom: 70px;
+}
+
+.headerArea .titleBox {
+    flex: 1;
+    width: 100%;
+
+
+}
+
+.headerArea .titleBox h1 {
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.headerArea .titleBox span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #bbb;
+}
+
+
+
+/* News Details End*/

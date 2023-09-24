@@ -12,8 +12,8 @@
                             Toshkent, Yangihayot tumani
                         </h1>
                         <div class="quote text-center">
-                            <p class="">"Yangi O'zbekiston - maktab ostonasidan boshlanadi"</p>
-                            <span class="">Shavkat Mirziyoyev</span>
+                            <p class="">"@lang('words.PrezidentText')"</p>
+                            <span class="">@lang('words.Prezident')</span>
                         </div>
                     </div>
                 </div>
@@ -38,37 +38,37 @@
                 <div class="icon">
                     <img alt="icon" src="allStyle/image/oquvchi.png" width="45%" style="margin-left: 60px;">
                 </div>
-                <h1>O'quvchilarga</h1>
+                <h1>@lang('words.forPeoples')</h1>
                 <div class="description">
-                    <p>2-sinf dars jadvali</p>
-                    <p>1-sinf dars jadvali</p>
-                    <p>8-sinf dars jadvali</p>
-                    <p>4-sinf dars jadvali</p>
+                    <p>@lang('words.1jadval')</p>
+                    <p>@lang('words.2jadval')</p>
+                    <p>@lang('words.4jadval')</p>
+                    <p>@lang('words.8jadval')</p>
                 </div>
 
-                <button type="button">Batafsil</button>
+                <button type="button">@lang('words.more')</button>
             </a>
             <a href="#">
                 <div class="icon">
                     <img alt="icon" src="allStyle/image/Ota-ona.png" width="45%" style="margin-left: 75px;">
                 </div>
-                <h1>Ota-onalarga</h1>
+                <h1>@lang('words.forParents')</h1>
                 <div class="description">
 
                 </div>
 
-                <button type="button">Batafsil</button>
+                <button type="button">@lang('words.more')</button>
             </a>
             <a href="#">
                 <div class="icon">
                     <img alt="icon" src="allStyle/image/oqtuvchi.png" width="45%" style="margin-left: 80px;">
                 </div>
-                <h1>O'qituvchilarga</h1>
+                <h1>@lang('words.forTeachers')</h1>
                 <div class="description">
 
                 </div>
 
-                <button type="button">Batafsil</button>
+                <button type="button">@lang('words.more')</button>
             </a>
         </div>
         <!-- Service List End -->
@@ -76,7 +76,7 @@
 
         <!-- School Info Start  -->
         <div class="row">
-            <h1 class="text-center text-uppercase mt-5 title">Maktab haqida qisqacha</h1>
+            <h1 class="text-center text-uppercase mt-5 title">@lang('words.qisqachaMaktabHaqida')</h1>
             <div class="col-lg-3 col-md-6">
                 <div class="school_info" data-tilt data-tilt-scale="1.1">
                     <h2>80</h2>
@@ -112,19 +112,10 @@
                 <div class="col-lg-6 col-md-12 text-md-center d-md-inline-block d-flex align-items-center wow fadeInLeft"
                     data-wow-duration=".9s" data-wow-delay=".6s">
                     <div class="onlineSchool__info ">
-                        <h1>Agar siz maktabga <br> bora olmasangiz, <br> maktab sizning <br> uyingizga borishi
-                            <br> mumkin.
+                        <h1>@lang('words.onlineSchoolText')
                         </h1>
-                        <p>Maktab.uz - bu xalqaro standartlarga javob beradigan va <br> maktab o'quvchilari
-                            uchun
-                            yuqori
-                            sifatli uzluksiz <br> masofaviy ta'limni ta'minlaydigan ilg'or raqamli ta'lim <br>
-                            texnologiyasi.
-                            Platforma o'qituvchilarga ham, ota -onalarga <br> ham o'quvchilarning rivojlanish
-                            darajasini
-                            kuzatish va mavzular <br> mazmuni bilan tanishish uchun keng imkoniyatlar beradi.
-                        </p>
-                        <button class="btns" type="button">Batafsil</button>
+                        <p>@lang('words.onlineSchoolParagraph')</p>
+                        <button class="btns" type="button">@lang('words.more')</button>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 wow fadeInRight" data-wow-duration=".9s" data-wow-delay=".6s">
@@ -142,7 +133,7 @@
         <div class="news">
             <div class="row mb-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="#">
+                    <a href="{{ route('newsDetail') }}">
                         <div class="imageBox">
                             <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
                         </div>
@@ -151,7 +142,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="#">
+                    <a href="{{ route('newsDetail') }}">
                         <div class="imageBox">
                             <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
                         </div>
@@ -160,7 +151,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="#">
+                    <a href="{{ route('newsDetail') }}">
                         <div class="imageBox">
                             <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
                         </div>
@@ -219,16 +210,16 @@
 
         <!-- Contact Section Start -->
         <div class="contact">
-            <h1 class="text-center text-uppercase mb-5 title title_map">Biz bilan bog'laning</h1>
+            <h1 class="text-center text-uppercase mb-5 title title_map">@lang('words.contactUs')</h1>
             <div class="row">
                 <div class="col-lg-7 col-md-12">
                     <form action="">
                         <div class="row contact_row1 text-sm-center">
                             <div class="col-lg-6 col-md-12 ">
-                                <input type="text" placeholder="I.F.Sh" name="name">
+                                <input type="text" placeholder="@lang('words.IFSH')" name="name">
                             </div>
                             <div class="col-lg-6 col-md-12 ">
-                                <input type="email" placeholder="E.pochta" name="email">
+                                <input type="email" placeholder="@lang('words.ePochta')" name="email">
                             </div>
                         </div>
                         <div class="row contact_row2 text-sm-center">
@@ -236,13 +227,13 @@
                                 <input type="text" value="+998" placeholder="Telefon" name="phone">
                             </div>
                             <div class="col-lg-6 col-md-12">
-                                <input type="text" placeholder="Mavzu" name="mavzu">
+                                <input type="text" placeholder="@lang('words.subject')" name="mavzu">
                             </div>
                         </div>
                         <div class="row contact_row3">
                             <div class="col-12">
-                                <input type="text" placeholder="Xabarlar" name="message">
-                                <button type="submit" class="contact_btn text-center">Yuborish</button>
+                                <input type="text" placeholder="@lang('words.message')" name="message">
+                                <button type="submit" class="contact_btn text-center">@lang('words.send')</button>
                             </div>
                         </div>
                     </form>
@@ -253,23 +244,23 @@
                     <table id="w9" class="table table-striped table-bordered detail-view">
                         <tbody>
                             <tr>
-                                <th>Mudir:</th>
+                                <th>@lang('words.mudir'):</th>
                                 <td>Aripova Umida Djangirovna</td>
                             </tr>
                             <tr>
-                                <th>Telefon:</th>
+                                <th>@lang('words.mudir'):</th>
                                 <td>+99891-191-84-48</td>
                             </tr>
                             <tr>
-                                <th>Faks:</th>
+                                <th>@lang('words.faks'):</th>
                                 <td>+99891-191-84-48</td>
                             </tr>
                             <tr>
-                                <th>Instagram:</th>
+                                <th>@lang('words.insta'):</th>
                                 <td>@329_maktab</td>
                             </tr>
                             <tr>
-                                <th>Telegram:</th>
+                                <th>@lang('words.tg'):</th>
                                 <td>@329maktab</td>
                             </tr>
                         </tbody>
@@ -284,7 +275,7 @@
         <!-- Useful Links Start -->
         <div class="usefulLinks">
             <div class="container">
-                <h1 class="mb-5">Foydali havolalar</h1>
+                <h1 class="mb-5">@lang('words.usefulLinks')</h1>
                 <div class="slider">
                     <a href="">
                         <div class="slider_content">

@@ -37,11 +37,16 @@ class MainController extends Controller
    }
    public function educations()
    {
+<<<<<<< HEAD
       $sports = Sport::all();
       $educations = Lesson::all();
       $twoshifts = Twoshift::all();
       $oneshifts = One_shift::all();
       return view('educations', compact('oneshifts','twoshifts','educations','sports'));
+=======
+      // $oneshifts = One_shift::all();
+      return view('educations');
+>>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
    }
    public function faqs()
    {
@@ -107,5 +112,9 @@ class MainController extends Controller
       $education = Lesson::where('id',$id)->first();
       
       return view('educationDetails',compact('education','sport'));
+   }
+   public function newsDetail()
+   {
+      return view('newsDetail');
    }
 }

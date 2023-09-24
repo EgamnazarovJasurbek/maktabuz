@@ -13,7 +13,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Asosiy</title>
+    <title>@lang('words.asosiy')</title>
 
     <!-- Bootstrap core css -->
     <link rel="stylesheet" href="{{ asset('allStyle/css/bootstrap.css') }}">
@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="{{ asset('allStyle/css/style.css') }}">
 </head>
 
+
 <body>
     <!-- Header Start -->
     <header>
@@ -42,21 +43,26 @@
             <div class="headerBar">
                 <div class="topMainMenu">
                     <a href="{{ route('index') }}" class="topMain-logo">
+<<<<<<< HEAD
                         <img src="/allStyle/image/Gerb.png" alt="" width="8%">
                         <p>329-sonli umumta'lim maktabi </p>
+=======
+                        <img src="allStyle/image/Gerb.png" alt="" width="8%">
+                        <p>329-sonli umumta'lim maktabi</p>
+>>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
                     </a>
                     <ul>
                         <li>
-                            <a href="https://vacancy.argos.uz/">Bosh ish orinlari</a>
+                            <a href="https://vacancy.argos.uz/">@lang('words.boshIwOrni')</a>
                         </li>
                         <li>
-                            <a href="{{ route('schoolRules') }}">Maktab qonun-qoidalar</a>
+                            <a href="{{ route('schoolRules') }}">@lang('words.maktabQonunQoidalari')</a>
                         </li>
                         <li>
-                            <a href="{{ route('faqs') }}">Tez-tez beriladigan savollar </a>
+                            <a href="{{ route('faqs') }}">@lang('words.tezSavollar')</a>
                         </li>
                         <li>
-                            <a href="{{ route('stateSymbols') }}">Davlat ramzlari</a>
+                            <a href="{{ route('stateSymbols') }}">@lang('words.davlatRamzlari')</a>
                         </li>
                     </ul>
                     <div class="additionalFuntions">
@@ -80,41 +86,40 @@
                                     </div>
                                     <div class="listMenu">
                                         <ul>
-                                            <li><a href="#">Maktab haqida</a>
+                                            <li><a href="#">@lang('words.maktabHaqida')</a>
                                                 <ul>
-                                                    <li><a href="{{ route('schoolTasks') }}">Maktab vazifalari</a></li>
-                                                    <li><a href="{{ route('leaderShip') }}">Rahbariyat</a></li>
-                                                    <li><a href="{{ route('teacher') }}">O'qituvchilar</a></li>
-                                                    <li><a href="{{ route('rekvizit') }}">Rekvizitlar</a></li>
+                                                    <li><a href="{{ route('schoolTasks') }}">@lang('words.maktabVazifalar')</a></li>
+                                                    <li><a href="{{ route('leaderShip') }}">@lang('words.leaderShip')</a></li>
+                                                    <li><a href="{{ route('teacher') }}">@lang('words.teachers')</a></li>
+                                                    <li><a href="{{ route('rekvizit') }}">@lang('words.rekvizit')</a></li>
                                                 </ul>
-                                            <li><a href="{{ route('educations') }}">Ta'lim</a>
+                                            <li><a href="{{ route('educations') }}">@lang('words.education')</a>
                                                 <ul>
-                                                    <li><a href="{{ route('educations') }}">1-smena</a></li>
-                                                    <li><a href="{{ route('educations') }}">2-smena</a></li>
-                                                    <li><a href="{{ route('educations') }}">Qo'shimcha darslar </a>
+                                                    <li><a href="{{ route('educations') }}">1-@lang('words.smena')</a></li>
+                                                    <li><a href="{{ route('educations') }}">2-@lang('words.smena')</a></li>
+                                                    <li><a href="{{ route('educations') }}">@lang('words.qoshimchaDars')</a>
                                                     </li>
-                                                    <li><a href="{{ route('educations') }}">Sport to'garaklar</a></li>
+                                                    <li><a href="{{ route('educations') }}">@lang('words.sportTogarak')</a></li>
                                                 </ul>
-                                            <li class="overlay_li-social"><a href="{{ route('schoolNews') }}">Axborot
-                                                    markazi</a>
+                                            <li class="overlay_li-social"><a href="{{ route('schoolNews') }}">@lang('words.axborotMarkaz')</a>
                                                 <ul>
-                                                    <li><a href="{{ route('schoolNews') }}">Maktab yangiliklari</a>
+                                                    <li><a href="{{ route('schoolNews') }}">@lang('words.schoolNews')</a>
                                                     </li>
-                                                    <li><a href="{{ route('gallery') }}">Galeriya</a></li>
-                                                    <li><a href="{{ route('infoGrafika') }}">Infografika</a></li>
+                                                    <li><a href="{{ route('gallery') }}">@lang('words.gallery')</a></li>
+                                                    <li><a href="{{ route('infoGrafika') }}">@lang('words.infoGraph')</a></li>
                                                 </ul>
                                         </ul>
                                         <ul class="simple">
-                                            <li><a href="{{ route('usefulResurs') }}">Foydali resurslar</a></li>
-                                            <li><a href="{{ route('connections') }}">Bogʻlanish</a></li>
+                                            <li><a href="{{ route('usefulResurs') }}">@lang('words.usefulResurs')</a></li>
+                                            <li><a href="{{ route('connections') }}">@lang('words.connect')</a></li>
                                         </ul>
                                     </div>
                                     <div class="topMainMenu2">
                                         <ul>
-                                            <li><a href="https://vacancy.argos.uz/">Bo'sh ish o‘rinlari</a></li>
-                                            <li><a href="{{ route('schoolRules') }}">Maktab qonun-qoidalari</a></li>
-                                            <li><a href="{{ route('faqs') }}">Tez-tez beriladigan savollar</a></li>
-                                            <li><a href="{{ route('stateSymbols') }}">Davlat ramzlari</a></li>
+                                            <li><a href="https://vacancy.argos.uz/">@lang('words.boshIwOrni')</a></li>
+                                            <li><a href="{{ route('schoolRules') }}">@lang('words.maktabQonunQoidalari')</a></li>
+                                            <li><a href="{{ route('faqs') }}">@lang('words.tezSavollar')</a></li>
+                                            <li><a href="{{ route('stateSymbols') }}">@lang('words.davlatRamzlari')i</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -134,63 +139,63 @@
                                             <a href="" class="">@lang('words.maktabHaqida')</a>
                                             <ul class="menu_ul-li">
                                                 <li>
-                                                    <a href="{{ route('schoolTasks') }}">Maktab vazifalari</a>
+                                                    <a href="{{ route('schoolTasks') }}">@lang('words.maktabVazifalar')</a>
                                                 </li>
                                                 <hr>
                                                 <li>
-                                                    <a href="{{ route('leaderShip') }}">Rahbariyat</a>
+                                                    <a href="{{ route('leaderShip') }}">@lang('words.leaderShip')</a>
                                                 </li>
                                                 <hr>
                                                 <li>
-                                                    <a href="{{ route('teacher') }}">O'qituvchilar</a>
+                                                    <a href="{{ route('teacher') }}">@lang('words.teachers')</a>
                                                 </li>
                                                 <hr>
                                                 <li>
-                                                    <a href="{{ route('rekvizit') }}">Rekvizitlar</a>
+                                                    <a href="{{ route('rekvizit') }}">@lang('words.rekvizit')</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="{{ route('educations') }}">Ta'lim </a>
+                                            <a href="{{ route('educations') }}">@lang('words.education')</a>
                                             <ul class="menu_ul-li">
                                                 <li>
-                                                    <a href="{{ route('educations') }}">1-smena</a>
+                                                    <a href="{{ route('educations') }}">1-@lang('words.smena')</a>
                                                 </li>
                                                 <hr>
                                                 <li>
-                                                    <a href="{{ route('educations') }}">2-smena</a>
+                                                    <a href="{{ route('educations') }}">2-@lang('words.smena')</a>
                                                 </li>
                                                 <hr>
                                                 <li>
-                                                    <a href="{{ route('educations') }}">Qo'shimcha darslar</a>
+                                                    <a href="{{ route('educations') }}" class="additional-lessons">@lang('words.qoshimchaDars')</a>
                                                 </li>
                                                 <hr>
                                                 <li>
-                                                    <a href="{{ route('educations') }}">Sport to'garaklari</a>
+                                                    <a href="{{ route('educations') }}">@lang('words.sportTogarak')</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="{{ route('usefulResurs') }}">Foydali resurslar </a>
+                                            <a href="{{ route('usefulResurs') }}">@lang('words.usefulResurs')</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('schoolNews') }}">Axborot markazi </a>
+                                            <a href="{{ route('schoolNews') }}">@lang('words.axborotMarkaz')</a>
                                             <ul class="menu_ul-li">
                                                 <li>
-                                                    <a href="{{ route('schoolNews') }}">Maktab yangiliklari</a>
+                                                    <a href="{{ route('schoolNews') }}">@lang('words.schoolNews')</a>
                                                 </li>
                                                 <hr>
                                                 <li>
-                                                    <a href="{{ route('gallery') }}">Galeriya</a>
+                                                    <a href="{{ route('gallery') }}">@lang('words.gallery')</a>
                                                 </li>
                                                 <hr>
                                                 <li>
-                                                    <a href="{{ route('infoGrafika') }}">Infografika</a>
+                                                    <a href="{{ route('infoGrafika') }}">@lang('words.infoGraph')</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="{{ route('connections') }}">Boglanish </a>
+                                            <a href="{{ route('connections') }}">@lang('words.connect')</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -213,13 +218,14 @@
 
 
                                 <div class="dropdown langBar">
-                                    <button class="borderedBtn" type="button" data-toggle="dropdown">{{ \App::getLocale() }}</button>
+                                    <button class="borderedBtn" type="button"
+                                        data-toggle="dropdown">{{ \App::getLocale() }}</button>
                                     <div id="" class="dropdown-menu-right dropdown-menu">
                                         <li><a class="active" href="/lang/uz">O'zbekcha</a></li>
                                         <li><a class="" href="/lang/Ўз">Ўзбекча</a></li>
-                                        <li><a class="" href="/lang/ru">Русский</a></li>    
+                                        <li><a class="" href="/lang/ru">Русский</a></li>
                                         <li><a class="" href="/lang/en">English</a></li>
-                                        
+
                                     </div>
 
                                 </div>
@@ -238,16 +244,16 @@
                         <div class="row">
                             <ul class="footer_menu">
                                 <li>
-                                    <a href="https://vacancy.argos.uz/">Bo'sh ish o'rinlari</a>
+                                    <a href="https://vacancy.argos.uz/">@lang('words.boshIwOrni')</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('schoolRules') }}">Maktab qonun qoidalari</a>
+                                    <a href="{{ route('schoolRules') }}">@lang('words.maktabQonunQoidalari')</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('faqs') }}">Tez-tez beriladigan savollar</a>
+                                    <a href="{{ route('faqs') }}">@lang('words.tezSavollar')</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('stateSymbols') }}">Davlat ramzlari</a>
+                                    <a href="{{ route('stateSymbols') }}">@lang('words.davlatRamzlari')</a>
                                 </li>
                             </ul>
                         </div>
@@ -287,7 +293,7 @@
                                 class="it_live-img">
                         </a>
                         <span class="year_text">
-                            © 2020-2023 Barcha huquqlar himoyalangan
+                            © 2020-2023 @lang('words.allRights')
                         </span>
                     </div>
                 </div>

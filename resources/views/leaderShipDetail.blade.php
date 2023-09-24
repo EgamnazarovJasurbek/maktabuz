@@ -3,14 +3,14 @@
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;
-            top: 18%;
-            right: 35%;
+            top: 18% !important;
+            right: 35% !;
             color: black;
         }
 
         .additionalFuntions {
             position: absolute;
-            top: 25%;
+            top: 25% !important;
             right: 3%;
         }
 
@@ -42,14 +42,14 @@
     @media (max-width:375px) {
         .topMain-logo {
             position: absolute;
-            top: 13%;
+            top: 13% !important;
             right: 35%;
             color: black;
         }
 
         .additionalFuntions {
             position: absolute;
-            top: 25%;
+            top: 25% !important;
             right: 3%;
         }
 
@@ -78,16 +78,17 @@
         }
     }
 </style>
+
 @section('content')
     <!-- Image Header Start-->
     <div class="mainContent withImage">
         <div class="imageHeader" style="padding-bottom: 0px;">
             <div class="container">
-                <h1 class="pageTitle text-dark">Rahbariyat batafsil</h1>
+                <h1 class="pageTitle text-dark">@lang('words.leaderShipDetail')</h1>
                 <nav aria-label="breadcrumb">
                     <ol id="w5" class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Asosiy</a></li>
-                        <li class="breadcrumb-item " aria-current="page">Rahbariyat batafsil</li>
+                        <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
+                        <li class="breadcrumb-item " aria-current="page">@lang('words.leaderShipDetail')</li>
                     </ol>
                 </nav>
             </div>

@@ -4,14 +4,14 @@
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;
-            top: 17%;
+            top: 17% !important;
             right: 35%;
             color: black;
         }
 
         .additionalFuntions {
             position: absolute;
-            top: 24%;
+            top: 24% !important;
             right: 3%;
         }
     }
@@ -22,11 +22,11 @@
     <div class="mainContent withImage">
         <div class="imageHeader" style="padding-bottom: 0px;">
             <div class="container">
-                <h1 class="pageTitle text-dark">Izlash natijalari</h1>
+                <h1 class="pageTitle text-dark">@lang('words.search')</h1>
                 <nav aria-label="breadcrumb">
                     <ol id="w5" class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Asosiy</a></li>
-                        <li class="breadcrumb-item " aria-current="page">Izlash natijalari</li>
+                        <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
+                        <li class="breadcrumb-item " aria-current="page">@lang('words.search')</li>
                     </ol>
                 </nav>
             </div>
@@ -45,7 +45,7 @@
                 <!-- Search Topilmaganda -->
                 <div class="container">
                     <div class="emptyBox"><i class="fas fa-search"></i>
-                        <p>Hech narsa topilmadi</p>
+                        <p>@lang('words.searchNull')</p>
                     </div>
 
 

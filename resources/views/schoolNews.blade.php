@@ -4,14 +4,14 @@
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;
-            top: 18%;
+            top: 18% !important;
             right: 35%;
             color: black;
         }
 
         .additionalFuntions {
             position: absolute;
-            top: 24%;
+            top: 24% !important;
             right: 3%;
         }
 
@@ -32,11 +32,11 @@
     <div class="mainContent withImage">
         <div class="imageHeader" style="padding-bottom: 0px;">
             <div class="container">
-                <h1 class="pageTitle text-dark">Yangiliklar</h1>
+                <h1 class="pageTitle text-dark">@lang('words.news')</h1>
                 <nav aria-label="breadcrumb">
                     <ol id="w5" class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Asosiy</a></li>
-                        <li class="breadcrumb-item " aria-current="page">Yangiliklar</li>
+                        <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
+                        <li class="breadcrumb-item " aria-current="page">@lang('words.news')</li>
                     </ol>
                 </nav>
             </div>
@@ -55,10 +55,10 @@
                 <div class="container">
                     <div class="navigationTabs">
                         <a href="" class="active" data-tab="tab1">
-                            <i class="fas fa-newspaper"></i> Yangiliklar
+                            <i class="fas fa-newspaper"></i> @lang('words.news')
                         </a>
                         <a href="" class="" data-tab="tab2">
-                            <i class="fas fa-bullhorn"></i> E'lonlar
+                            <i class="fas fa-bullhorn"></i> @lang('words.announcements')
                         </a>
                     </div>
 

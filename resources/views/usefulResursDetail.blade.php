@@ -4,14 +4,14 @@
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;
-            top: 14%;
+            top: 14% !important;
             right: 35%;
             color: black;
         }
 
         .additionalFuntions {
             position: absolute;
-            top: 24%;
+            top: 24% !important;
             right: 3%;
         }
     }
@@ -22,11 +22,11 @@
     <div class="mainContent withImage">
         <div class="imageHeader" style="padding-bottom: 0px;">
             <div class="container">
-                <h1 class="pageTitle text-dark">Foydali resurslar</h1>
+                <h1 class="pageTitle text-dark">@lang('words.usefulResurs')</h1>
                 <nav aria-label="breadcrumb">
                     <ol id="w5" class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Asosiy</a></li>
-                        <li class="breadcrumb-item " aria-current="page">Foydali resurslar</li>
+                        <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
+                        <li class="breadcrumb-item " aria-current="page">@lang('words.usefulResurs')</li>
                     </ol>
                 </nav>
             </div>
@@ -55,12 +55,21 @@
                                 <table id="w0" class="table detail-view projectTable">
                                     <tbody>
                                         <tr>
+<<<<<<< HEAD
                                             <th>Veb-sayt</th>
                                             <td><a href="#"
                                                     target="_blank">{{ $resource->url }}</a></td>
                                         </tr>
                                         <tr>
                                             <th>{{ $resource->info_uz }}</th>
+=======
+                                            <th>@lang('words.webSite')</th>
+                                            <td><a href="https://attestat.uzedu.uz/"
+                                                    target="_blank">https://attestat.uzedu.uz/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>@lang('words.additionalInfo')</th>
+>>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
                                             <td></td>
                                         </tr>
 

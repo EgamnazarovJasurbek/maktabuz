@@ -4,14 +4,14 @@
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;
-            top: 14%;
+            top: 14% !important;
             right: 35%;
             color: black;
         }
 
         .additionalFuntions {
             position: absolute;
-            top: 24%;
+            top: 24% !important;
             right: 3%;
         }
     }
@@ -24,11 +24,11 @@
     <div class="mainContent withImage">
         <div class="imageHeader" style="padding-bottom: 0px;">
             <div class="container">
-                <h1 class="pageTitle text-dark">Rekvizitlar</h1>
+                <h1 class="pageTitle text-dark">@lang('words.rekvizit')</h1>
                 <nav aria-label="breadcrumb">
                     <ol id="w5" class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Asosiy</a></li>
-                        <li class="breadcrumb-item " aria-current="page">Rekvizitlar</li>
+                        <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
+                        <li class="breadcrumb-item " aria-current="page">@lang('words.rekvizit')</li>
                     </ol>
                 </nav>
             </div>
@@ -49,17 +49,30 @@
                     <p></p>
                     <p><strong>{{ $requisite->title_uz }}</strong></p>
 
+<<<<<<< HEAD
                     <p>Qabul qiluvchi: {{ $requisite->recipient_uz }}</p>
+=======
+                    <p>@lang('words.qabulQiluvci'): mintaqalararo operatsion UFK (O'zbekiston Respublikasi&nbsp; Xalq ta'limi
+                        vazirligi)</p>
+>>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
 
                     <p>INN: {{  $requisite->tin }}</p>
 
                     <p>KPP: {{  $requisite->checkpoint }}</p>
 
+<<<<<<< HEAD
                     <p>Bank nomi: {{  $requisite->bank_name_uz }}</p>
+=======
+                    <p>@lang('words.bankName'): Aloqabank, Toshkent</p>
+>>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
 
                     <p>BIK: {{  $requisite->bic }}</p>
 
+<<<<<<< HEAD
                     <p>Hisob {{  $requisite->account }}</p>
+=======
+                    <p>@lang('words.hisob'): 3100643000000019500</p>
+>>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
                     <p></p>
                 </div>
                 @endforeach

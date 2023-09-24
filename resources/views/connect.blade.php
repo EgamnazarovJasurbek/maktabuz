@@ -4,11 +4,11 @@
           <div class="mainContent withImage">
             <div class="imageHeader" style="padding-bottom: 0px;">
                 <div class="container">
-                    <h1 class="pageTitle text-dark">Bog'lanish</h1>
+                    <h1 class="pageTitle text-dark">@lang('words.connect')</h1>
                     <nav aria-label="breadcrumb">
                         <ol id="w5" class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Asosiy</a></li>
-                            <li class="breadcrumb-item " aria-current="page">Bog'lanish</li>
+                            <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
+                            <li class="breadcrumb-item " aria-current="page">@lang('words.connect')</li>
                         </ol>
                     </nav>
                 </div>
@@ -65,7 +65,7 @@
                                 <div class="row contact_row3">
                                     <div class="col-12">
                                         <input type="text" placeholder="Xabarlar" name="message">
-                                        <button type="submit" class="contact_btn text-center">Yuborish</button>
+                                        <button type="submit" class="contact_btn text-center">@lang('words.send')</button>
                                     </div>
                                 </div>
                             </form>
@@ -76,23 +76,23 @@
                             <table id="w9" class="table table-striped table-bordered detail-view">
                                 <tbody>
                                     <tr>
-                                        <th>Mudir:</th>
+                                        <th>@lang('words.mudir'):</th>
                                         <td>Aripova Umida Djangirovna</td>
                                     </tr>
                                     <tr>
-                                        <th>Telefon:</th>
+                                        <th>@lang('words.phone'):</th>
                                         <td>+99891-191-84-48</td>
                                     </tr>
                                     <tr>
-                                        <th>Faks:</th>
+                                        <th>@lang('words.faks'):</th>
                                         <td>+99891-191-84-48</td>
                                     </tr>
                                     <tr>
-                                        <th>Instagram:</th>
+                                        <th>@lang('words.insta'):</th>
                                         <td>@329_maktab</td>
                                     </tr>
                                     <tr>
-                                        <th>Telegram:</th>
+                                        <th>@lang('words.tg'):</th>
                                         <td>@329maktab</td>
                                     </tr>
                                 </tbody>

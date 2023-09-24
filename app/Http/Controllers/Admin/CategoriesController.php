@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
-use Illuminate\Support\Str;
+
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -32,13 +32,10 @@ class CategoriesController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            "name_oz" => "required",
-            "name_uz" => "required",
-            "name_ru" => "required",
-            "name_en" => "required",
+            "name" => "required",
+          
         ]);
         $requestData = $request->all();
-        $requestData['slug'] = Str::slug($requestData['name_uz']);
         Category::create($requestData);
         return redirect()->route('admin.categories.index')->with('success', 'Category created succuessfuly'); 
     }
@@ -67,18 +64,14 @@ class CategoriesController extends Controller
     public function update(Request $request, string $id)
     {
         $this->validate($request,[
-            "name_oz" => "required",
-            "name_uz" => "required",
-            "name_ru" => "required",
-            "name_en" => "required",
+            "name" => "required",
+           
         ]);
         $categories = Category::findOrFail($id);
-        $categories['slug'] = Str::slug($request->name_uz);
+        
         $categories->update([
-            "name_oz" =>$request->name_oz,
-            "name_uz" =>$request->name_uz,
-            "name_ru" =>$request->name_ru,
-            "name_en" =>$request->name_en,
+            "name" =>$request->name,
+           
          ]);
          return redirect()->route('admin.categories.index')->with('success','Category updated successfully!');
     }

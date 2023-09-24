@@ -42,7 +42,7 @@ Route::get('/lang/{lang}', function($lang){
 Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/connections', [MainController::class, 'connections'])->name('connections');
 Route::get('/educations', [MainController::class, 'educations'])->name('educations');
-Route::get('/educationDetails', [MainController::class, 'educationDetails'])->name('educationDetails');
+Route::get('/educationDetails/{id}', [MainController::class, 'educationDetails'])->name('educationDetails');
 Route::get('/faqs', [MainController::class, 'faqs'])->name('faqs');
 Route::get('/gallery', [MainController::class, 'gallery'])->name('gallery');
 Route::get('/infoGrafika', [MainController::class, 'infoGrafika'])->name('infoGrafika');
@@ -56,7 +56,7 @@ Route::get('/search', [MainController::class, 'search'])->name('search');
 Route::get('/stateSymbols', [MainController::class, 'stateSymbols'])->name('stateSymbols');
 Route::get('/teacher', [MainController::class, 'teacher'])->name('teacher');
 Route::get('/usefulResurs', [MainController::class, 'usefulResurs'])->name('usefulResurs');
-Route::get('/usefulResursDetail', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
+Route::get('/usefulResursDetail/{id}', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
 
 
 Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () {

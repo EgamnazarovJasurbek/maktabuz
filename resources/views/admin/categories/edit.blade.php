@@ -22,42 +22,13 @@
                             <div class="card-body">
                                
                                 <div class="form-group">
-                                    <label>Name (УЗ)</label>
-                                    <input type="text" class="form-control" name="name_oz"
-                                        value="{{ $category->name_oz }}">
-                                    @error("name_oz")
+                                    <label>Nomi</label>
+                                    <input type="text" class="form-control" name="name"
+                                        value="{{ $category->name }}">
+                                    @error("name")
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="form-group">
-                                    <label>Name (Uz)</label>
-                                    <input type="text" class="form-control" name="name_uz"
-                                        value="{{ $category->name_uz }}">
-                                    @error('name_uz')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <label>Name (Ru)</label>
-                                    <input type="text" class="form-control" name="name_ru"
-                                        value="{{$category->name_ru }}">
-                                    @error('name_ru')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <label>Name (En)</label>
-                                    <input type="text" class="form-control" name="name_en"
-                                        value="{{ $category->name_en }}">
-                                    @error('name_en')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <label>Slug</label>
-                                    <input type="text" class="form-control" name="slug" value="{{ $category->slug }}">
-                                </div>
-
                             </div>
                             <div class="card-footer text-right">
                                 <button class="btn btn-primary mr-1" type="submit">Save</button>

@@ -30,8 +30,7 @@
                                             <th class="text-center">
                                                 T/R
                                             </th>
-                                            <th>Name</th>
-                                            <th>Slug</th>
+                                            <th>Nomi</th>
                                             <th>Created_at</th>
                                             
                                             <th>Action</th>
@@ -39,8 +38,8 @@
                                         @foreach ($categories as $category)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $category->name_uz }}</td>
-                                                <td>{{ $category->slug }}</td>
+                                                <td>{{ $category->name }}</td>
+                                              
                                                 <td>{{ $category->created_at }}</td>
                                               
                                                 <td>

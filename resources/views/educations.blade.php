@@ -88,314 +88,68 @@
                                         <div class="icon">
                                             <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
-                                        <span>1-sinf dars jadvali</span>
+                                        <span>{{ $oneshift->name_uz }}</span>
                                     </div>
-                                    <span>1-sinf dars jadvali</span>
+                                    <span>{{ $oneshift->name_uz }}</span>
                                 </a>
                                 @endforeach
                                
 
-                                {{-- <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>3-sinf dars jadvali</span>
-                                    </div>
-                                    <span>3-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>4-sinf dars jadvali</span>
-                                    </div>
-                                    <span>4-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>5-sinf dars jadvali</span>
-                                    </div>
-                                    <span>5-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>8-sinf dars jadvali</span>
-                                    </div>
-                                    <span>8-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>9-sinf dars jadvali</span>
-                                    </div>
-                                    <span>9-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>10-sinf dars jadvali</span>
-                                    </div>
-                                    <span>10-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>11-sinf dars jadvali</span>
-                                    </div>
-                                    <span>11-sinf dars jadvali</span>
-                                </a> --}}
-
-                                {{-- <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Dars soatlari</span>
-                                    </div>
-                                    <span>Dars soatlari</span>
-                                </a> --}}
+                           
                             </div>
                         </div>
                         <!-- 2  --  SMENA -->
                         <div class="tab-pane fade" id="tab2" role="tabpanel">
                             <div class="servicesList">
-                                <a href="#">
+                                @foreach ($twoshifts as $twoshift)
+                                <a href="{{ asset('twoshifts/file/' . $twoshift->image) }}">
                                     <div>
                                         <div class="icon">
                                             <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
-                                        <span>2-sinf dars jadvali</span>
+                                        <span>{{ $twoshift->name_uz }}</span>
                                     </div>
-                                    <span>2-sinf dars jadvali</span>
+                                    <span>{{ $twoshift->name_uz }}</span>
                                 </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>6-sinf dars jadvali</span>
-                                    </div>
-                                    <span>6-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>7-sinf dars jadvali</span>
-                                    </div>
-                                    <span>7-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Dars soatlari</span>
-                                    </div>
-                                    <span>Dars soatlari</span>
-                                </a>
+                                @endforeach  
                             </div>
                         </div>
                         <!-- Qo'shimcha Darslar -->
                         <div class="tab-pane fade" id="tab3" role="tabpanel">
                             <div class="servicesList">
-                                <a href="">
+                                @foreach ($educations as $education)
+                                <a href="{{ route('educationDetails',$education->id) }}">
                                     <div>
                                         <div class="icon">
                                             <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
-                                        <span>Hunarmandlar</span>
+                                        <span>{{ $education->name_uz }}</span>
                                     </div>
-                                    <span>Hunarmandlar</span>
+                                    <span>{{ $education->name_uz }}</span>
                                 </a>
+                                @endforeach
+                              
 
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Sehrli qo'llar</span>
-                                    </div>
-                                    <span>Sehrli qo'llar</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Mohir qo'llar</span>
-                                    </div>
-                                    <span>Mohir qo'llar</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Dasturchilar</span>
-                                    </div>
-                                    <span>Dasturchilar</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Matematiklar</span>
-                                    </div>
-                                    <span>Matematiklar</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Yosh kimyogarlar </span>
-                                    </div>
-                                    <span>Yosh kimyogarlar</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Yosh biolog</span>
-                                    </div>
-                                    <span>Yosh biolog</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Al Xorazmiy avlodlari</span>
-                                    </div>
-                                    <span>Al Xorazmiy avlodlari </span>
-                                </a>
+                                
                             </div>
                         </div>
                         <!-- Sport To'garaklari -->
                         <div class="tab-pane fade " id="tab4" role="tabpanel">
                             <div class="servicesList">
-                                <a href="#">
+                                @foreach ($sports as $sport)
+                                <a href="{{ route('educationDetails',$sport->id) }}">
                                     <div>
                                         <div class="icon">
                                             <img alt="icon" src="allStyle/image/book svg.jfif">
                                         </div>
-                                        <span>Milliy Kurash </span>
+                                        <span>{{ $sport->name_uz }} </span>
                                     </div>
-                                    <span>Milliy Kurash </span>
+                                    <span>{{ $sport->name_uz }}</span>
                                 </a>
+                                @endforeach
+                              
 
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Futbol</span>
-                                    </div>
-                                    <span>Futbol</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Voleybol</span>
-                                    </div>
-                                    <span>Voleybol</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Dzyudo</span>
-                                    </div>
-                                    <span>Dzyudo</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Taekvando</span>
-                                    </div>
-                                    <span>Taekvando</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Regbi</span>
-                                    </div>
-                                    <span>Regbi</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Badiiy Gimnastika</span>
-                                    </div>
-                                    <span>Badiiy Gimnastika</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Shaxmat</span>
-                                    </div>
-                                    <span>Shaxmat</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Harakatli o'yinlar</span>
-                                    </div>
-                                    <span>Harakatli o'yinlar</span>
-                                </a>
+                               
                             </div>
                         </div>
                     </div>

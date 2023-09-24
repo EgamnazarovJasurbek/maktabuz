@@ -45,26 +45,22 @@
                 <div class="container">
                     <div class="pageView">
                         <div class="projectView">
-                            <img alt="logo" src="allStyle/image/Useful-links-Detail.jpg">
+                            <img alt="logo" src="resources/images/{{ $resource->image }}">
 
                             <div class="description">
-                                <h1 class="simpleTitle">Attestat.uzedu.uz</h1>
+                                <h1 class="simpleTitle">{{ $resource->url }}</h1>
 
-                                <p>Elektron shahodatnoma platformasi. Xalq ta’limi tizimidagi maktab bitiruvchilari
-                                    to‘g‘risidagi ma’lumotlarni avtomatlashtirish maqsadida “Attestat”
-                                    avtomatlashtirilgan axborot tizimi ishga tushirildi. Bugungi kunda jismoniy
-                                    shaxsning shaxsiy identifikasiya raqami (JSHSHIR) bilan bog‘langan holda 1,7 mln.
-                                    bitiruvchilarning shahodatnomalari raqamlashtirilgan.</p>
+                                <p>{{ $resource->body_uz }}</p>
 
                                 <table id="w0" class="table detail-view projectTable">
                                     <tbody>
                                         <tr>
                                             <th>Veb-sayt</th>
-                                            <td><a href="https://attestat.uzedu.uz/"
-                                                    target="_blank">https://attestat.uzedu.uz/</a></td>
+                                            <td><a href="#"
+                                                    target="_blank">{{ $resource->url }}</a></td>
                                         </tr>
                                         <tr>
-                                            <th>Qo'shimcha ma'lumot</th>
+                                            <th>{{ $resource->info_uz }}</th>
                                             <td></td>
                                         </tr>
 

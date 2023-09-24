@@ -21,17 +21,9 @@
                             <div class="table-responsive">
                                 <table class="table table-striped" id="table-1">
                                     <tr>
-                                        <th>Name (УЗ)</th> <td>{{ $category->name_oz }}</td>
+                                        <th>Name</th> <td>{{ $category->name }}</td>
                                     </tr>
-                                    <tr>
-                                        <th>Name (UZ)</th> <td>{{ $category->name_uz }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Name (RU)</th> <td>{{ $category->name_ru }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Name (EN)</th> <td>{{ $category->name_en }}</td>
-                                    </tr>
+                                   
                                     <tr>
                                         <th>Created_at </th> <td>{{ $category->created_at }}</td>
                                     </tr>
@@ -41,11 +33,6 @@
                                     <tr>
                                         <th>Slug</th> <td>{{ $category->slug }}</td>
                                      </tr>
-                                    
-                                   
-                                   
-                                   
-                                   
                                 </table>
                               </div>
                           </div>

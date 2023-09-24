@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Teacher;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
@@ -23,7 +24,8 @@ class TeachersController extends Controller
      */
     public function create()
     {
-        return view('admin.teachers.create');
+        $categories = Category::all();
+        return view('admin.teachers.create',compact('categories'));
     }
 
     /**
@@ -37,7 +39,7 @@ class TeachersController extends Controller
             "name_ru" => "required",
             "name_en" => "required",
             "email" => "required",
-            "category" => "required",
+            "category_id" => "required",
             "phone" => "required|numeric",
             "specialist_oz" => "required",
             "specialist_uz" => "required",
@@ -90,7 +92,7 @@ class TeachersController extends Controller
             "name_ru" => "required",
             "name_en" => "required",
             "email" => "required",
-            "category" => "required",
+            "category_id" => "required",
             "phone" => "required|numeric",
             "specialist_oz" => "required",
             "specialist_uz" => "required",

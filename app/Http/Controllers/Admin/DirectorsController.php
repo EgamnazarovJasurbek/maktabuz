@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Director;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
@@ -23,7 +24,8 @@ class DirectorsController extends Controller
      */
     public function create()
     {
-        return view('admin.directors.create');
+        $categories = Category::all();
+        return view('admin.directors.create',compact('categories'));
     }
 
     /**
@@ -37,7 +39,7 @@ class DirectorsController extends Controller
             "name_ru" => "required",
             "name_en" => "required",
             "email" => "required",
-            "category" => "required",
+            "category_id" => "required",
             "phone" => "required|numeric",
             "reception_time_oz" => "required",
             "reception_time_uz" => "required",
@@ -90,7 +92,7 @@ class DirectorsController extends Controller
             "name_ru" => "required",
             "name_en" => "required",
             "email" => "required",
-            "category" => "required",
+            "category_id" => "required",
             "phone" => "required|numeric",
             "reception_time_oz" => "required",
             "reception_time_uz" => "required",
@@ -119,7 +121,7 @@ class DirectorsController extends Controller
             "name_ru" =>$request->name_ru,
             "name_en" =>$request->name_en,
             "email" =>$request->email,
-            "category" =>$request->category,
+            "category_id" =>$request->category_id,
             "phone" =>$request->phone,
             "reception_time_oz" =>$request->reception_time_oz,
             "reception_time_uz" =>$request->reception_time_uz,

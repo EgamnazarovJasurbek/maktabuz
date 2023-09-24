@@ -19,9 +19,9 @@
           <li class="dropdown">
             <a href="{{ route('admin.teachers.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Ustozlar</span></a>
           </li>
-          {{-- <li class="dropdown">
+          <li class="dropdown">
             <a href="{{ route('admin.categories.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Categories</span></a>
-          </li> --}}
+          </li>
           <li class="dropdown">
             <a href="{{ route('admin.lessons.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Qo'shimcha darslar</span></a>
           </li>

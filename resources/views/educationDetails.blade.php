@@ -109,33 +109,33 @@
 
                 <div class="leaderInfo">
                     <div class="photo">
-                        <img alt="image" src="allStyle/image/shaxmat.jpg" class="mt-5 me-4">
+                        <img alt="image" src="/lessons/images/{{ $education->image }}" class="mt-5 me-4">
                     </div>
 
                     <div class="description">
-                        <h1 class="staffTitle mb-4"><b class="me-1">Rustamova</b> Aziza<br> Zoirovna</h1>
+                        <h1 class="staffTitle mb-4"><b class="me-1">{{ $education->teacher_uz }}</h1>
 
 
 
                         <div class="contactInfo">
                             <div>
                                 <i class="fa-solid fa-door-open"></i>
-                                <span>Dushanbadan - Jumagacha</span>
+                                <span>{{ $education->week_oz }}</span>
                             </div>
 
                             <div>
                                 <i class="far fa-clock"></i>
-                                <span>17:00 - 18:30</span>
+                                <span>{{ $education->time }}</span>
                             </div>
 
                             <div>
                                 <i class="fas fa-phone-alt"></i>
-                                <a href="tel:998 99 871 25 13">998 99 871 25 13</a>
+                                <a href="tel:998 99 871 25 13">{{ $education->phone }}</a>
                             </div>
 
                             <div>
                                 <i class="fa-solid fa-child"></i>
-                                <a href="mailto:school329@xtv.uz">5-6 sinf</a>
+                                <a href="mailto:school329@xtv.uz">{{ $education->class_uz }}</a>
                             </div>
                         </div>
                     </div>

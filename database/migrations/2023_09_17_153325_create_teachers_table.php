@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('class_time_uz');
             $table->string('class_time_ru');
             $table->string('class_time_en');
-            $table->string('category');
+            $table->integer('category_id');
             $table->string('phone')->numeric();
             $table->string('email');
             $table->string('image');

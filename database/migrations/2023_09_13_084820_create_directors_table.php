@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('biography_uz');
             $table->string('biography_ru');
             $table->string('biography_en');
-            $table->string('category');
+            $table->integer('category_id');
             $table->string('image');
             $table->timestamps();
         });

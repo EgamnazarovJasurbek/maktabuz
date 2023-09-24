@@ -44,25 +44,26 @@
     <main>
         <section>
             <div class="container">
+                @foreach ($requisites as $requisite)
                 <div class="page_content mb-5 mt-5"><b></b>
                     <p></p>
-                    <p><strong>Federal byudjet daromadiga mablag' o'tkazish uchun Bosh daromad ma'muri sifatida
-                            Vazirlikning rekvizitlari:</strong></p>
+                    <p><strong>{{ $requisite->title_uz }}</strong></p>
 
-                    <p>Qabul qiluvchi: mintaqalararo operatsion UFK (O'zbekiston Respublikasi&nbsp; Xalq ta'limi
-                        vazirligi)</p>
+                    <p>Qabul qiluvchi: {{ $requisite->recipient_uz }}</p>
 
-                    <p>INN: 9710062939</p>
+                    <p>INN: {{  $requisite->tin }}</p>
 
-                    <p>KPP: 771001001</p>
+                    <p>KPP: {{  $requisite->checkpoint }}</p>
 
-                    <p>Bank nomi: Aloqabank, Toshkent</p>
+                    <p>Bank nomi: {{  $requisite->bank_name_uz }}</p>
 
-                    <p>BIK: 24501901</p>
+                    <p>BIK: {{  $requisite->bic }}</p>
 
-                    <p>Hisob 3100643000000019500</p>
+                    <p>Hisob {{  $requisite->account }}</p>
                     <p></p>
                 </div>
+                @endforeach
+               
             </div>
         </section>
     </main>

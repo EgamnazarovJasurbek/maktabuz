@@ -54,8 +54,17 @@
                 <div class="container">
 
                     <div class="projectsList">
-
-                        <a class="item" href="{{ route('usefulResursDetail') }}">
+                        @foreach ($resources as $resource)
+                        <a class="item" href="{{ route('usefulResursDetail',$resource->id) }}">
+                            <img alt="logo" src="resources/images/{{ $resource->image }}">
+                            <div class="description">
+                                <h1>{{ $resource->name_uz }}</h1>
+                                <h3>{{ $resource->body_uz }}
+                                </h3>
+                            </div>
+                        </a>
+                        @endforeach
+                        {{-- <a class="item" href="{{ route('usefulResursDetail') }}">
                             <img alt="logo" src="allStyle/image/Useful-links.jpg">
                             <div class="description">
                                 <h1>Edukids</h1>
@@ -119,7 +128,7 @@
                                     to‘plamidan foydalanishlari mumkin.
                                 </h3>
                             </div>
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
             </div>

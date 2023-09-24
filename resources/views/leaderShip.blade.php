@@ -121,13 +121,22 @@
 
             <!-- Direktor -->
             <div class="container">
+                @foreach ($directors as $director)
                 <a href="leaderShipDetail.html" class="mainLeader">
+                    <img alt="Director" src="directors/images/{{ $director->image }}">
+                    <div class="details">
+                        <h1>{{ $director->name_uz }}</h1>
+                        <span>Maktab direktori</span>
+                    </div>
+                </a>
+                @endforeach
+                {{-- <a href="leaderShipDetail.html" class="mainLeader">
                     <img alt="Director" src="allStyle/image/Director.jpg">
                     <div class="details">
                         <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
                         <span>Maktab direktori</span>
                     </div>
-                </a>
+                </a> --}}
             </div>
 
             <hr class="sections__line">
@@ -135,7 +144,18 @@
             <!-- ZAM Direktors -->
             <div class="container deputy_director">
                 <div class="row">
+                    @foreach ($leaderShips as $leaderShip)
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <a href="leaderShipDetail.html" class="deputy_director-main">
+                            <img src="directors/images/{{ $leaderShip->image }}" width="60%" height="85%" alt="Zam Director">
+                            <div class="deputy_director-details">
+                                <h1>{{ $leaderShip->name_uz }}</h1>
+                                <span>{{ $leaderShip->category }}</span>
+                            </div>
+                        </a>
+                    </div>
+                    @endforeach
+                    {{-- <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                         <a href="leaderShipDetail.html" class="deputy_director-main">
                             <img src="allStyle/image/Director.jpg" width="60%" alt="Zam Director">
                             <div class="deputy_director-details">
@@ -170,7 +190,7 @@
                                 <span>Yoshlar yetakchisi</span>
                             </div>
                         </a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

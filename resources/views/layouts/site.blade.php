@@ -16,12 +16,12 @@
     <title>Asosiy</title>
 
     <!-- Bootstrap core css -->
-    <link rel="stylesheet" href="allStyle/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ asset('allStyle/css/bootstrap.css') }}">
 
     <!-- Animate css -->
-    <link rel="stylesheet" href="allStyle/css/animate.css">
+    <link rel="stylesheet" href="{{ asset('allStyle/css/animate.css') }}">
     <!-- Font awesome style -->
-    <link rel="stylesheet" href="allStyle/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/allStyle/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -29,9 +29,9 @@
 
 
     <!-- Custom style for this template -->
-    <link rel="stylesheet" href="allStyle/css/style.css">
+    <link rel="stylesheet" href="{{ asset('allStyle/css/style.css') }}">
     <!-- Responsive Style -->
-    <link rel="stylesheet" href="allStyle/css/responsive.css">
+    <link rel="stylesheet" href="{{ asset('allStyle/css/style.css') }}">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
             <div class="headerBar">
                 <div class="topMainMenu">
                     <a href="{{ route('index') }}" class="topMain-logo">
-                        <img src="allStyle/image/Gerb.png" alt="" width="8%">
+                        <img src="/allStyle/image/Gerb.png" alt="" width="8%">
                         <p>329-sonli umumta'lim maktabi </p>
                     </a>
                     <ul>
@@ -76,7 +76,7 @@
                             <div class="overlay">
                                 <div class="container">
                                     <div class="topLogoGerb">
-                                        <img src="allStyle/image/Gerb.png" alt="Logo" width="13%">
+                                        <img src="/allStyle/image/Gerb.png" alt="Logo" width="13%">
                                     </div>
                                     <div class="listMenu">
                                         <ul>
@@ -273,7 +273,7 @@
                         </div>
                         <div class="footer_logo">
                             <span>
-                                <img src="allStyle/image/Gerb.png" alt="Logo" width="20%">
+                                <img src="/allStyle/image/Gerb.png" alt="Logo" width="20%">
                             </span>
                             <a href="">
                                 329-sonli Umumta'lim maktabi
@@ -283,7 +283,7 @@
 
 
                         <a href="#" class="it_live-logo">
-                            <img src="allStyle/image/It live logo for red-04-04.png" alt="IT_Live"
+                            <img src="/allStyle/image/It live logo for red-04-04.png" alt="IT_Live"
                                 class="it_live-img">
                         </a>
                         <span class="year_text">
@@ -297,11 +297,11 @@
 </body>
 
 <!-- Js -->
-<script src="allStyle/js/bootstrap.js"></script>
+<script src="/allStyle/js/bootstrap.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="allStyle/js/tilt.jquery.js"></script>
-<script src="allStyle/js/wow.min.js"></script>
+<script src="/allStyle/js/tilt.jquery.js"></script>
+<script src="/allStyle/js/wow.min.js"></script>
 
 <!-- Js -->
 

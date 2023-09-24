@@ -56,12 +56,12 @@ Route::get('/search', [MainController::class, 'search'])->name('search');
 Route::get('/stateSymbols', [MainController::class, 'stateSymbols'])->name('stateSymbols');
 Route::get('/teacher', [MainController::class, 'teacher'])->name('teacher');
 Route::get('/usefulResurs', [MainController::class, 'usefulResurs'])->name('usefulResurs');
-<<<<<<< HEAD
+
 Route::get('/usefulResursDetail/{id}', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
-=======
+
 Route::get('/usefulResursDetail', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
 Route::get('/newsDetail', [MainController::class, 'newsDetail'])->name('newsDetail');
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
+
 
 
 Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () {

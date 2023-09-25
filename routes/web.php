@@ -37,17 +37,18 @@ Route::get('/lang/{lang}', function($lang){
    return back();
 });
 
-
+//sdsadadagdsf
 
 Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/connections', [MainController::class, 'connections'])->name('connections');
 Route::get('/educations', [MainController::class, 'educations'])->name('educations');
 Route::get('/educationDetails/{id}', [MainController::class, 'educationDetails'])->name('educationDetails');
+Route::get('/educationDetails2/{id}', [MainController::class, 'educationDetails2'])->name('educationDetails2');
 Route::get('/faqs', [MainController::class, 'faqs'])->name('faqs');
 Route::get('/gallery', [MainController::class, 'gallery'])->name('gallery');
 Route::get('/infoGrafika', [MainController::class, 'infoGrafika'])->name('infoGrafika');
 Route::get('/leaderShip', [MainController::class, 'leaderShip'])->name('leaderShip');
-Route::get('/leaderShipDetail', [MainController::class, 'leaderShipDetail'])->name('leaderShipDetail');
+Route::get('/leaderShipDetail/{id}', [MainController::class, 'leaderShipDetail'])->name('leaderShipDetail');
 Route::get('/rekvizit', [MainController::class, 'rekvizit'])->name('rekvizit');
 Route::get('/schoolNews', [MainController::class, 'schoolNews'])->name('schoolNews');
 Route::get('/schoolRules', [MainController::class, 'schoolRules'])->name('schoolRules');
@@ -55,12 +56,11 @@ Route::get('/schoolTasks', [MainController::class, 'schoolTasks'])->name('school
 Route::get('/search', [MainController::class, 'search'])->name('search');
 Route::get('/stateSymbols', [MainController::class, 'stateSymbols'])->name('stateSymbols');
 Route::get('/teacher', [MainController::class, 'teacher'])->name('teacher');
+Route::get('/teacherDetail/{id}', [MainController::class, 'teacherDetail'])->name('teacherDetail');
 Route::get('/usefulResurs', [MainController::class, 'usefulResurs'])->name('usefulResurs');
-
 Route::get('/usefulResursDetail/{id}', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
-
-Route::get('/usefulResursDetail', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
-Route::get('/newsDetail', [MainController::class, 'newsDetail'])->name('newsDetail');
+Route::get('/newsDetail/{id}', [MainController::class, 'newsDetail'])->name('newsDetail');
+Route::get('/newsDetail2/{id}', [MainController::class, 'newsDetail2'])->name('newsDetail2');
 
 
 

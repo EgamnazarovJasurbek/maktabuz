@@ -9,4 +9,6 @@ class Director extends Model
 {
     protected $guarded =[];
     use HasFactory;
+
+  
 }

@@ -49,30 +49,30 @@
                     <p></p>
                     <p><strong>{{ $requisite->title_uz }}</strong></p>
 
-<<<<<<< HEAD
+
                     <p>Qabul qiluvchi: {{ $requisite->recipient_uz }}</p>
-=======
-                    <p>@lang('words.qabulQiluvci'): mintaqalararo operatsion UFK (O'zbekiston Respublikasi&nbsp; Xalq ta'limi
-                        vazirligi)</p>
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
+
+                    {{-- <p>@lang('words.qabulQiluvci'): mintaqalararo operatsion UFK (O'zbekiston Respublikasi&nbsp; Xalq ta'limi
+                        vazirligi)</p> --}}
+
 
                     <p>INN: {{  $requisite->tin }}</p>
 
                     <p>KPP: {{  $requisite->checkpoint }}</p>
 
-<<<<<<< HEAD
+
                     <p>Bank nomi: {{  $requisite->bank_name_uz }}</p>
-=======
-                    <p>@lang('words.bankName'): Aloqabank, Toshkent</p>
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
+
+                    {{-- <p>@lang('words.bankName'): Aloqabank, Toshkent</p> --}}
+
 
                     <p>BIK: {{  $requisite->bic }}</p>
 
-<<<<<<< HEAD
-                    <p>Hisob {{  $requisite->account }}</p>
-=======
-                    <p>@lang('words.hisob'): 3100643000000019500</p>
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
+
+                    <p>Hisob: {{  $requisite->account }}</p>
+
+                    {{-- <p>@lang('words.hisob'): 3100643000000019500</p> --}}
+
                     <p></p>
                 </div>
                 @endforeach

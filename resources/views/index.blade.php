@@ -76,12 +76,12 @@
 
         <!-- School Info Start  -->
         <div class="row">
-<<<<<<< HEAD
+
             <h1 class="text-center text-uppercase mt-5 title">Maktab haqida qisqacha</h1>
             @foreach ($sliders as $slider)
-=======
+
             <h1 class="text-center text-uppercase mt-5 title">@lang('words.qisqachaMaktabHaqida')</h1>
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
+
             <div class="col-lg-3 col-md-6">
                 <div class="school_info" data-tilt data-tilt-scale="1.1">
                     <h2>{{ $slider->number }}</h2>
@@ -123,7 +123,7 @@
             <div class="row mb-4">
                 @foreach ($news as $new)
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="{{ route('newsDetail') }}">
+                    <a href="{{ route('newsDetail',$new->id) }}">
                         <div class="imageBox">
                             <img alt="image" src="news/images/{{ $new->image }}" width="170px">
                         </div>
@@ -132,60 +132,7 @@
                     </a>
                 </div>
                 @endforeach
-                {{-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="#">
-                        <div class="imageBox">
-                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
-                        </div>
-                        <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
-                        <span>04 Oktabr 2021</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="{{ route('newsDetail') }}">
-                        <div class="imageBox">
-                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
-                        </div>
-                        <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
-                        <span>04 Oktabr 2021</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="{{ route('newsDetail') }}">
-                        <div class="imageBox">
-                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
-                        </div>
-                        <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
-                        <span>04 Oktabr 2021</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="#">
-                        <div class="imageBox">
-                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
-                        </div>
-                        <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
-                        <span>04 Oktabr 2021</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="#">
-                        <div class="imageBox">
-                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
-                        </div>
-                        <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
-                        <span>04 Oktabr 2021</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <a href="#">
-                        <div class="imageBox">
-                            <img alt="image" src="allStyle/image/329-maktab.jpg" width="170px">
-                        </div>
-                        <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga marhamat!</h1>
-                        <span>04 Oktabr 2021</span>
-                    </a>
-                </div> --}}
+             
             </div>
 
         </div>
@@ -245,7 +192,7 @@
                         @foreach ($connections as $connection)
                         <tbody>
                             <tr>
-<<<<<<< HEAD
+
                                 <th>Mudir:</th>
                                 <td>{{ $connection->name }}</td>
                             </tr>
@@ -270,9 +217,9 @@
                         {{-- <tbody>
                             <tr>
                                 <th>Mudir:</th>
-=======
+
                                 <th>@lang('words.mudir'):</th>
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
+
                                 <td>Aripova Umida Djangirovna</td>
                             </tr>
                             <tr>

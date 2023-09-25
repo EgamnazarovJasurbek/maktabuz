@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="row contact_row3">
                                     <div class="col-12">
-                                        <input type="text" placeholder="Xabarlar" name="message">
+                                        <input type="text" class="ms-0" placeholder="Xabarlar" name="message">
                                         <button type="submit" class="contact_btn text-center">@lang('words.send')</button>
                                     </div>
                                 </div>
@@ -74,28 +74,32 @@
                             <h2 class="mb-3">329-sonli umumta’lim maktabi</h2>
 
                             <table id="w9" class="table table-striped table-bordered detail-view">
+                                @foreach ($connections as $connection)
                                 <tbody>
                                     <tr>
-                                        <th>@lang('words.mudir'):</th>
-                                        <td>Aripova Umida Djangirovna</td>
+        
+                                        <th>Mudir:</th>
+                                        <td>{{ $connection->name }}</td>
                                     </tr>
                                     <tr>
-                                        <th>@lang('words.phone'):</th>
-                                        <td>+99891-191-84-48</td>
+                                        <th>Telefon:</th>
+                                        <td>{{ $connection->phone }}</td>
                                     </tr>
                                     <tr>
-                                        <th>@lang('words.faks'):</th>
-                                        <td>+99891-191-84-48</td>
+                                        <th>Faks:</th>
+                                        <td>{{ $connection->faks }}</td>
                                     </tr>
                                     <tr>
-                                        <th>@lang('words.insta'):</th>
-                                        <td>@329_maktab</td>
+                                        <th>Instagram:</th>
+                                        <td>{{ $connection->instagram }}</td>
                                     </tr>
                                     <tr>
-                                        <th>@lang('words.tg'):</th>
-                                        <td>@329maktab</td>
+                                        <th>Telegram:</th>
+                                        <td>{{ $connection->telegram }}</td>
                                     </tr>
                                 </tbody>
+                                @endforeach
+                                
                             </table>
                         </div>
                     </div>

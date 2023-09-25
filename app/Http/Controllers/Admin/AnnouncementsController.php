@@ -14,7 +14,7 @@ class AnnouncementsController extends Controller
      */
     public function index()
     {
-        $announcements = Announcements::all();
+        $announcements = Announcements::paginate(5);
         return view('admin.announcements.index',compact('announcements'));
     }
 

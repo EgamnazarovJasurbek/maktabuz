@@ -43,22 +43,14 @@
         <div class="container">
             <div class="collapse_Faq">
                 <div class="row">
+                    @foreach ($faqs as $faq)
                     <div class="col-12" style="border: 1px solid #ece1e1; padding: 20px;">
-                        <a href="">Nima uchun 9-sinf bitiruvchilariga asosiy taʼlim toʻgʻrisidagi hujjatning asl
-                            nusxasi berilmaydi, faqat foto nusxasi yoki elektron nusxasi beriladi? 11-sinfni
-                            tugatganidan keyin sertifikat beriladimi?</a>
-                        <p class="faq_answer">O'zbekistonda majburiy o'n bir yillik ta'lim joriy etilganligi va
-                            9-sinf o'quvchilarining ko'pchiligi 10-sinfda o'qishni davom ettirishi sababli
-                            9-sinf bitiruvchilarining sertifikatlari maktabda saqlanadi. Agar talaba 9-sinfni
-                            tamomlagandan so'ng akademik litseyga, kasb-hunar maktabiga o'qishga kirsa yoki
-                            yangi o'quv yurtidan ma'lumotnoma yoki Kupon asosida boshqa umumta'lim maktabiga
-                            o'tkazilsa. Bu masala bo'yicha ota-onalar maktab direktoriga murojaat qilishlari
-                            mumkin.
-
-                            Majburiy o'n bir yillik ta'lim tugagandan so'ng, 11 sinf bitiruvchilariga sertifikat
-                            tantanali ravishda topshiriladi.</p>
+                        <a href="">{{ $faq->title_uz }}</a>
+                        <p class="faq_answer">{{ $faq->body_uz }}</p>
                     </div>
-                    <div class="col-12 mt-5" style="border: 1px solid #ece1e1; padding: 20px;">
+                    @endforeach
+                   
+                    {{-- <div class="col-12 mt-5" style="border: 1px solid #ece1e1; padding: 20px;">
                         <a href="">Umumtaʼlim maktablarining 0,5 stavka shtat birligidagi rahbarlari
                             (maʼnaviy-maʼrifiy hamda oʻquv-tarbiya ishlari boʻyicha direktor oʻrinbosarlari)
                             necha soatgacha dars olishi mumkin va ish haqi qay tartibda toʻlanadi?</a>
@@ -84,7 +76,7 @@
 
                             Majburiy o'n bir yillik ta'lim tugagandan so'ng, 11 sinf bitiruvchilariga sertifikat
                             tantanali ravishda topshiriladi.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 

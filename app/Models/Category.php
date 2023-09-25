@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Teacher;
+use App\Models\Director;
+
 class Category extends Model
 {
     protected $guarded = [];
@@ -13,4 +15,6 @@ class Category extends Model
     {
         return $this->hasMany(Teacher::class);
     }
+
+   
 }

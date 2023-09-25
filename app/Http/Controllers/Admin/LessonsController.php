@@ -14,7 +14,7 @@ class LessonsController extends Controller
      */
     public function index()
     {
-        $lessons = Lesson::all();
+        $lessons = Lesson::paginate(5);
         return view('admin.lessons.index',compact('lessons'));
     }
 

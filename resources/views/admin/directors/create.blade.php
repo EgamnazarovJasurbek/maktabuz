@@ -116,13 +116,38 @@
             
                                 </div>
                                 <div class="form-group">
-                                    <label>Toifa kiriting</label>
-                                    <select name="category_id" id="" class="form-control">
-                                        @foreach ($categories as $category)
-                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                        @endforeach
-                                    </select>
+                                    <label>Mutaxasislik (УЗ)</label>
+                                    <input type="text" class="form-control" name="specialist_oz"
+                                        value="{{ old('specialist_oz') }}">
+                                    @error('specialist_oz')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
+                                <div class="form-group">
+                                    <label>Mutaxasislik (UZ)</label>
+                                    <input type="text" class="form-control" name="specialist_uz"
+                                        value="{{ old('specialist_uz') }}">
+                                    @error('specialist_uz')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <label>Mutaxasislik (RU)</label>
+                                    <input type="text" class="form-control" name="specialist_ru"
+                                        value="{{ old('specialist_ru') }}">
+                                    @error('specialist_ru')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <label>Mutaxasislik (EN)</label>
+                                    <input type="text" class="form-control" name="specialist_en"
+                                        value="{{ old('specialist_en') }}">
+                                    @error('specialist_en')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                               
                                 <div class="form-group">
                                     <label>Email</label>
                                     <input type="email" class="form-control" name="email"

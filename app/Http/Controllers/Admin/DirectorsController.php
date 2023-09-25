@@ -15,7 +15,7 @@ class DirectorsController extends Controller
      */
     public function index()
     {
-        $directors = Director::all();
+        $directors = Director::paginate(2);
         return view('admin.directors.index',compact('directors'));
     }
 
@@ -24,8 +24,8 @@ class DirectorsController extends Controller
      */
     public function create()
     {
-        $categories = Category::all();
-        return view('admin.directors.create',compact('categories'));
+       
+        return view('admin.directors.create');
     }
 
     /**
@@ -39,7 +39,11 @@ class DirectorsController extends Controller
             "name_ru" => "required",
             "name_en" => "required",
             "email" => "required",
-            "category_id" => "required",
+            "specialist_oz" => "required",
+            "specialist_uz" => "required",
+            "specialist_ru" => "required",
+            "specialist_en" => "required",
+          
             "phone" => "required|numeric",
             "reception_time_oz" => "required",
             "reception_time_uz" => "required",
@@ -92,6 +96,10 @@ class DirectorsController extends Controller
             "name_ru" => "required",
             "name_en" => "required",
             "email" => "required",
+            "specialist_oz" => "required",
+            "specialist_uz" => "required",
+            "specialist_ru" => "required",
+            "specialist_en" => "required",
             "category_id" => "required",
             "phone" => "required|numeric",
             "reception_time_oz" => "required",
@@ -123,6 +131,10 @@ class DirectorsController extends Controller
             "email" =>$request->email,
             "category_id" =>$request->category_id,
             "phone" =>$request->phone,
+            "specialist_oz" =>$request->specialist_oz,
+            "specialist_uz" =>$request->specialist_uz,
+            "specialist_ru" =>$request->specialist_ru,
+            "specialist_en" =>$request->specialist_en,
             "reception_time_oz" =>$request->reception_time_oz,
             "reception_time_uz" =>$request->reception_time_uz,
             "reception_time_ru" =>$request->reception_time_ru,

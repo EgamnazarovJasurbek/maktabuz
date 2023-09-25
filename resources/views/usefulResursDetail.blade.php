@@ -45,7 +45,7 @@
                 <div class="container">
                     <div class="pageView">
                         <div class="projectView">
-                            <img alt="logo" src="resources/images/{{ $resource->image }}">
+                            <img alt="logo" src="/resources/images/{{ $resource->image }}">
 
                             <div class="description">
                                 <h1 class="simpleTitle">{{ $resource->url }}</h1>
@@ -55,21 +55,21 @@
                                 <table id="w0" class="table detail-view projectTable">
                                     <tbody>
                                         <tr>
-<<<<<<< HEAD
+
                                             <th>Veb-sayt</th>
                                             <td><a href="#"
                                                     target="_blank">{{ $resource->url }}</a></td>
                                         </tr>
                                         <tr>
                                             <th>{{ $resource->info_uz }}</th>
-=======
+
                                             <th>@lang('words.webSite')</th>
                                             <td><a href="https://attestat.uzedu.uz/"
                                                     target="_blank">https://attestat.uzedu.uz/</a></td>
                                         </tr>
                                         <tr>
                                             <th>@lang('words.additionalInfo')</th>
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
+
                                             <td></td>
                                         </tr>
 

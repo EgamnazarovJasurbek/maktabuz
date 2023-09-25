@@ -14,7 +14,7 @@ class ConnectionsController extends Controller
      */
     public function index()
     {
-        $connections = Connection::all();
+        $connections = Connection::paginate(5);
         return view('admin.connections.index',compact('connections'));
     }
 

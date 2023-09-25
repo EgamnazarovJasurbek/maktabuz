@@ -14,7 +14,7 @@ class SportsController extends Controller
      */
     public function index()
     {
-        $sports = Sport::all();
+        $sports = Sport::paginate(5);
         return view('admin.sports.index',compact('sports'));
     }
 

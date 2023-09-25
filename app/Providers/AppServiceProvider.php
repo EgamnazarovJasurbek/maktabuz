@@ -19,6 +19,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        view()->composer('layouts.site',function($view){
+            $schoolName = \App\Models\SchoolName::all();
+            $view->with(compact('schoolName'));
+        });
     }
 }

@@ -94,108 +94,73 @@
     }
 </style>
 @section('content')
-          <!-- Image Header Start-->
-          <div class="mainContent withImage">
-            <div class="imageHeader" style="padding-bottom: 0px;">
-                <div class="container">
-                    <h1 class="pageTitle text-dark">@lang('words.leaderShip')</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol id="w5" class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
-                            <li class="breadcrumb-item " aria-current="page">@lang('words.leaderShip')</li>
-                        </ol>
-                    </nav>
-                </div>
+    <!-- Image Header Start-->
+    <div class="mainContent withImage">
+        <div class="imageHeader" style="padding-bottom: 0px;">
+            <div class="container">
+                <h1 class="pageTitle text-dark">@lang('words.leaderShip')</h1>
+                <nav aria-label="breadcrumb">
+                    <ol id="w5" class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ route('index') }}">@lang('words.asosiy')</a></li>
+                        <li class="breadcrumb-item " aria-current="page">@lang('words.leaderShip')</li>
+                    </ol>
+                </nav>
             </div>
         </div>
-        <!-- Image Header End -->
+    </div>
+    <!-- Image Header End -->
 
     </div>
-</header>
-<!-- Header End -->
+    </header>
+    <!-- Header End -->
 
-<!-- Main section Start -->
-<main>
-    <section>
-        <div class="leaderShip">
+    <!-- Main section Start -->
+    <main>
+        <section>
+            <div class="leaderShip">
 
-            <!-- Direktor -->
-            <div class="container">
-                @foreach ($directors as $director)
-                <a href="leaderShipDetail.html" class="mainLeader">
-                    <img alt="Director" src="directors/images/{{ $director->image }}">
-                    <div class="details">
-                        <h1>{{ $director->name_uz }}</h1>
-                        <span>Maktab direktori</span>
-                    </div>
-                </a>
-                @endforeach
-                {{-- <a href="leaderShipDetail.html" class="mainLeader">
+                <!-- Direktor -->
+                <div class="container">
+                    @foreach ($directors as $director)
+                        <a href="leaderShipDetail.html" class="mainLeader">
+                            <img alt="Director" src="directors/images/{{ $director->image }}">
+                            <div class="details">
+                                <h1>{{ $director->name_uz }}</h1>
+                                <span>Maktab direktori</span>
+                            </div>
+                        </a>
+                    @endforeach
+                    {{-- <a href="leaderShipDetail.html" class="mainLeader">
                     <img alt="Director" src="allStyle/image/Director.jpg">
                     <div class="details">
                         <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
                         <span>Maktab direktori</span>
                     </div>
                 </a> --}}
-            </div>
+                </div>
 
-            <hr class="sections__line">
+                <hr class="sections__line">
 
-            <!-- ZAM Direktors -->
-            <div class="container deputy_director">
-                <div class="row">
-                    @foreach ($leaderShips as $leaderShip)
-                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <a href="leaderShipDetail.html" class="deputy_director-main">
-                            <img src="directors/images/{{ $leaderShip->image }}" width="60%" height="85%" alt="Zam Director">
-                            <div class="deputy_director-details">
-                                <h1>{{ $leaderShip->name_uz }}</h1>
-                                <span>{{ $leaderShip->category }}</span>
+                <!-- ZAM Direktors -->
+                <div class="container deputy_director">
+                    <div class="row">
+                        @foreach ($leaderShips as $leaderShip)
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <a href="leaderShipDetail.html" class="deputy_director-main">
+                                    <img src="directors/images/{{ $leaderShip->image }}" width="60%" height="85%"
+                                        alt="Zam Director">
+                                    <div class="deputy_director-details">
+                                        <h1>{{ $leaderShip->name_uz }}</h1>
+                                        <span>{{ $leaderShip->category }}</span>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                        @endforeach
                     </div>
-                    @endforeach
-                    {{-- <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <a href="leaderShipDetail.html" class="deputy_director-main">
-                            <img src="allStyle/image/Director.jpg" width="60%" alt="Zam Director">
-                            <div class="deputy_director-details">
-                                <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
-                                <span>Zam direktor</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <a href="leaderShipDetail.html" class="deputy_director-main">
-                            <img src="allStyle/image/Director.jpg" width="60%" alt="Zam Director">
-                            <div class="deputy_director-details">
-                                <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
-                                <span>M'anaviyatchi</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <a href="leaderShipDetail.html" class="deputy_director-main">
-                            <img src="allStyle/image/Director.jpg" width="60%" alt="Zam Director">
-                            <div class="deputy_director-details">
-                                <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
-                                <span>Bo'lim boshlig'i</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <a href="leaderShipDetail.html" class="deputy_director-main">
-                            <img src="allStyle/image/Director.jpg" width="60%" alt="Zam Director">
-                            <div class="deputy_director-details">
-                                <h1><b>Aripova</b><br>Umida<br>Djangirovna</h1>
-                                <span>Yoshlar yetakchisi</span>
-                            </div>
-                        </a>
-                    </div> --}}
                 </div>
             </div>
-        </div>
-        </div>
-    </section>
-</main>
-<!-- Main section End -->
+            </div>
+        </section>
+    </main>
+    <!-- Main section End -->
 @endsection

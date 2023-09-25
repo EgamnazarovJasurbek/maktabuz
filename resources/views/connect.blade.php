@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="row contact_row3">
                                     <div class="col-12">
-                                        <input type="text" placeholder="Xabarlar" name="message">
+                                        <input type="text" class="ms-0" placeholder="Xabarlar" name="message">
                                         <button type="submit" class="contact_btn text-center">@lang('words.send')</button>
                                     </div>
                                 </div>

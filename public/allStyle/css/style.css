@@ -250,6 +250,8 @@ ul li {
     font-size: 19px;
     padding-left: 23px;
     margin-top: 12px;
+    text-transform: uppercase;
+    font-family: math;
 }
 
 .topMain-logo img {
@@ -501,10 +503,16 @@ ul li {
     height: 700px;
 }
 
-.logoTextBox__title {
+.logoTextBox__title  {
+    font-size: 34px; 
     padding-top: 25px;
+    font-family: math;
 }
-
+.logoTextBox__title b {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 38px !important;
+}
 
 .quote {
     padding-top: 60px;

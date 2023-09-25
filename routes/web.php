@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AnnouncementsController;
 use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\ConnectionsController;
+use App\Http\Controllers\Admin\COntactController;
 use App\Http\Controllers\Admin\DirectorsController;
 use App\Http\Controllers\Admin\FaqsController;
 use App\Http\Controllers\Admin\GalleriesController;
@@ -11,14 +12,15 @@ use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\OneShiftsController;
 use App\Http\Controllers\Admin\RequisitesController;
 use App\Http\Controllers\Admin\ResourcesController;
+use App\Http\Controllers\Admin\SchoolNameController;
 use App\Http\Controllers\Admin\SliderController;
-use App\Http\Controllers\Admin\SocialController;
 use App\Http\Controllers\Admin\SportsController;
 use App\Http\Controllers\Admin\TasksController;
 use App\Http\Controllers\Admin\TeachersController;
 use App\Http\Controllers\Admin\TwoshiftsController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,7 +33,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-// Jasco 111
+
+
+// Language
 Route::get('/lang/{lang}', function($lang){
    session(['lang' => $lang]);
    return back();
@@ -56,10 +60,7 @@ Route::get('/search', [MainController::class, 'search'])->name('search');
 Route::get('/stateSymbols', [MainController::class, 'stateSymbols'])->name('stateSymbols');
 Route::get('/teacher', [MainController::class, 'teacher'])->name('teacher');
 Route::get('/usefulResurs', [MainController::class, 'usefulResurs'])->name('usefulResurs');
-
 Route::get('/usefulResursDetail/{id}', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
-
-Route::get('/usefulResursDetail', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
 Route::get('/newsDetail', [MainController::class, 'newsDetail'])->name('newsDetail');
 
 
@@ -84,6 +85,9 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::resource('sliders', SliderController::class);
     Route::resource('connections', ConnectionsController::class);
     Route::resource('galleries', GalleriesController::class);
+    Route::resource('schoolName', SchoolNameController::class);
+    Route::resource('contact',COntactController::class);
+
 });
 
 Route::middleware('auth')->group(function () {

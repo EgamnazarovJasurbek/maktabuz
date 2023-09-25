@@ -43,13 +43,10 @@
             <div class="headerBar">
                 <div class="topMainMenu">
                     <a href="{{ route('index') }}" class="topMain-logo">
-<<<<<<< HEAD
-                        <img src="/allStyle/image/Gerb.png" alt="" width="8%">
-                        <p>329-sonli umumta'lim maktabi </p>
-=======
                         <img src="allStyle/image/Gerb.png" alt="" width="8%">
-                        <p>329-sonli umumta'lim maktabi</p>
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
+                        @foreach ($schoolName as $name)
+                        <p>{{ $name->name_uz }}</p>
+                        @endforeach
                     </a>
                     <ul>
                         <li>
@@ -95,18 +92,22 @@
                                                 </ul>
                                             <li><a href="{{ route('educations') }}">@lang('words.education')</a>
                                                 <ul>
-                                                    <li><a href="{{ route('educations') }}">1-@lang('words.smena')</a></li>
-                                                    <li><a href="{{ route('educations') }}">2-@lang('words.smena')</a></li>
+                                                    <li><a href="{{ route('educations') }}">1-@lang('words.smena')</a>
+                                                    </li>
+                                                    <li><a href="{{ route('educations') }}">2-@lang('words.smena')</a>
+                                                    </li>
                                                     <li><a href="{{ route('educations') }}">@lang('words.qoshimchaDars')</a>
                                                     </li>
                                                     <li><a href="{{ route('educations') }}">@lang('words.sportTogarak')</a></li>
                                                 </ul>
-                                            <li class="overlay_li-social"><a href="{{ route('schoolNews') }}">@lang('words.axborotMarkaz')</a>
+                                            <li class="overlay_li-social"><a
+                                                    href="{{ route('schoolNews') }}">@lang('words.axborotMarkaz')</a>
                                                 <ul>
                                                     <li><a href="{{ route('schoolNews') }}">@lang('words.schoolNews')</a>
                                                     </li>
                                                     <li><a href="{{ route('gallery') }}">@lang('words.gallery')</a></li>
-                                                    <li><a href="{{ route('infoGrafika') }}">@lang('words.infoGraph')</a></li>
+                                                    <li><a href="{{ route('infoGrafika') }}">@lang('words.infoGraph')</a>
+                                                    </li>
                                                 </ul>
                                         </ul>
                                         <ul class="simple">
@@ -167,7 +168,8 @@
                                                 </li>
                                                 <hr>
                                                 <li>
-                                                    <a href="{{ route('educations') }}" class="additional-lessons">@lang('words.qoshimchaDars')</a>
+                                                    <a href="{{ route('educations') }}"
+                                                        class="additional-lessons">@lang('words.qoshimchaDars')</a>
                                                 </li>
                                                 <hr>
                                                 <li>
@@ -281,10 +283,12 @@
                             <span>
                                 <img src="/allStyle/image/Gerb.png" alt="Logo" width="20%">
                             </span>
-                            <a href="">
-                                329-sonli Umumta'lim maktabi
-                                <i>Toshkent, Yangihayot tumani</i>
-                            </a>
+                            @foreach ($schoolName as $name)
+                                <a href="">
+                                    {{ $name->name_uz }}
+                                    <i>{{ $name->city_uz }}</i>
+                                </a>
+                            @endforeach
                         </div>
 
 

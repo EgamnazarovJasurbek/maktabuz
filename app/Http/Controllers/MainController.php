@@ -10,6 +10,7 @@ use App\Models\News;
 use App\Models\One_shift;
 use App\Models\Requisite;
 use App\Models\Resource;
+use App\Models\SchoolName;
 use App\Models\Slider;
 use App\Models\Sport;
 use App\Models\Teacher;
@@ -21,11 +22,11 @@ class MainController extends Controller
 
    public function index()
    {
-      
+      $schoolName = SchoolName::all();
       $connections = Connection::all();
       $news = News::all();
       $sliders = Slider::all();
-      return view('index',compact('sliders','news','connections'));
+      return view('index',compact('sliders','news','connections','schoolName'));
    }
    public function schoolTasks()
    {
@@ -45,7 +46,7 @@ class MainController extends Controller
       return view('educations', compact('oneshifts','twoshifts','educations','sports'));
 
       // $oneshifts = One_shift::all();
-      return view('educations');
+      // return view('educations');
 
    }
    public function faqs()

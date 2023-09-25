@@ -30,7 +30,6 @@
                     </ol>
                 </nav>
             </div>
-<<<<<<< HEAD
         </header>
         <!-- Header End -->
     
@@ -72,7 +71,6 @@
                                     </div>
                                 </a>
                             </div> --}}
-=======
         </div>
     </div>
     <!-- Image Header End -->
@@ -97,7 +95,6 @@
                                     <span>Zam direktor</span>
                                 </div>
                             </a>
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
                         </div>
                         <div class="col-lg-4 col-md-3 col-sm-6">
                             <a href="#" class="deputy_director-main">

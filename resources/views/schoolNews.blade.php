@@ -67,7 +67,20 @@
                         <div class="tab-pane fade active show" id="tab1">
                             <div class="imageCardBoxes">
                                 <div class="row">
+                                    @foreach ($news as $new)
                                     <div class="col-xl-4 col-lg-4 col-md-6">
+                                        <a href="{{ route('newsDetail',$new->id) }}">
+                                            <div class="imageBox">
+                                                <img alt="image" src="/news/images/{{ $new->image }}">
+                                            </div>
+                                            <h1>{{ $new->title_1_uz }}
+                                            </h1>
+                                            <span>{{ $new->created_at->format(' d.M.Y') }}</span>
+                                        </a>
+                                    </div>
+                                    @endforeach
+                                  
+                                    {{-- <div class="col-xl-4 col-lg-4 col-md-6">
                                         <a href="">
                                             <div class="imageBox">
                                                 <img alt="image" src="allStyle/image/It live logo for red-04-04.png">
@@ -77,18 +90,7 @@
                                             </h1>
                                             <span>04 Oktabr 2021</span>
                                         </a>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                        <a href="">
-                                            <div class="imageBox">
-                                                <img alt="image" src="allStyle/image/It live logo for red-04-04.png">
-                                            </div>
-                                            <h1>Rossiya universitetlarida taʼlim olmoqchimisiz? Unda koʻrgazmaga
-                                                marhamat!
-                                            </h1>
-                                            <span>04 Oktabr 2021</span>
-                                        </a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -96,7 +98,19 @@
                         <div class="tab-pane fade" id="tab2">
                             <div class="imageCardBoxes">
                                 <div class="row">
+                                    @foreach ($annoouncements as $annoouncement)
                                     <div class="col-xl-4 col-lg-4 col-md-6">
+                                        <a href="{{ route('newsDetail2',$annoouncement->id) }}">
+                                            <div class="imageBox">
+                                                <img alt="image" src="Elon/images/{{ $annoouncement->image }}">
+                                            </div>
+                                            <h1>{{ $annoouncement->title_1_uz }}
+                                            </h1>
+                                            <span>{{ $annoouncement->created_at->format(' d.M.Y') }}</span>
+                                        </a>
+                                    </div>
+                                    @endforeach
+                                    {{-- <div class="col-xl-4 col-lg-4 col-md-6">
                                         <a href="">
                                             <div class="imageBox">
                                                 <img alt="image" src="allStyle/image/It live logo for red-04-04.png">
@@ -128,7 +142,7 @@
                                             </h1>
                                             <span>04 Oktabr 2021</span>
                                         </a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>

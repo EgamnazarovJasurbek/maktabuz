@@ -58,15 +58,13 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <div class="titleBox">
-                                    <h1>Pensiya yoshida bo‘lgan pedagog kadrlarning mavjud malaka toifalari saqlanib
-                                        qolinishi va unga mos ravishda oylik maoshlari to‘lanishi yuzasidan rasmiy
-                                        ma’lumot</h1>
-                                    <span>12 Февраль 2021</span>
+                                    <h1>{{ $new->title_1_uz }}</h1>
+                                    <span> {{ $new->created_at->format(' d.M.Y')}} </span>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <div class="titleBox_img">
-                                    <img alt="image" src="allStyle/image/329-maktab.jpg" width="70%">
+                                    <img alt="image" src="/news/images/{{ $new->image }}" width="70%">
                                 </div>
                             </div>
                         </div>
@@ -77,19 +75,7 @@
                     <div class="news__detail-text">
                         <div class="row">
                             <div class="col-12 text-justify fw-medium">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores velit nisi aperiam.
-                                    Amet tempore voluptatum culpa necessitatibus dignissimos unde labore voluptatem illo
-                                    quos sunt, voluptas placeat dolorum nulla. Facilis alias obcaecati, laboriosam autem
-                                    eos porro aspernatur minima inventore quis deserunt iure neque omnis nihil.
-                                    Provident delectus repellendus consectetur. Consectetur, deleniti dolores culpa
-                                    voluptatibus maiores, quas, pariatur veniam tenetur totam obcaecati ab at?
-                                    Doloremque praesentium rem maiores eveniet quis quia eum obcaecati! Ullam et
-                                    officiis nobis ipsam voluptates vel, magnam dicta dolor maiores mollitia saepe,
-                                    pariatur, nesciunt ducimus numquam recusandae omnis perferendis autem veritatis
-                                    laboriosam? Tempora at totam nihil distinctio sint. Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit. Laboriosam, repudiandae nostrum. Explicabo minima
-                                    similique commodi id ipsa quod natus laboriosam quas non facilis eos perspiciatis
-                                    soluta, deleniti nihil saepe quis.</p>
+                                <p>{{ $new->body_uz }}</p>
                             </div>
                         </div>
                     </div>

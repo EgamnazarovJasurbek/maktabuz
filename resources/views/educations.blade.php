@@ -82,7 +82,7 @@
                         <!-- 1  --  SMENA -->
                         <div class="tab-pane fade active show" id="tab1" role="tabpanel">
                             <div class="servicesList">
-                                {{-- @foreach ($oneshifts as $oneshift)
+                                 @foreach ($oneshifts as $oneshift)
                                 <a href="{{ asset('oneshifts/file/' . $oneshift->image) }}">
                                     <div>
                                         <div class="icon">
@@ -92,92 +92,8 @@
                                     </div>
                                     <span>{{ $oneshift->name_uz }}</span>
                                 </a>
-                                @endforeach --}}
-                               
+                                @endforeach 
 
-<<<<<<< HEAD
-                           
-=======
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>3-sinf dars jadvali</span>
-                                    </div>
-                                    <span>3-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>4-sinf dars jadvali</span>
-                                    </div>
-                                    <span>4-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>5-sinf dars jadvali</span>
-                                    </div>
-                                    <span>5-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>8-sinf dars jadvali</span>
-                                    </div>
-                                    <span>8-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>9-sinf dars jadvali</span>
-                                    </div>
-                                    <span>9-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>10-sinf dars jadvali</span>
-                                    </div>
-                                    <span>10-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>11-sinf dars jadvali</span>
-                                    </div>
-                                    <span>11-sinf dars jadvali</span>
-                                </a>
-
-                                <a href="#">
-                                    <div>
-                                        <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
-                                        </div>
-                                        <span>Dars soatlari</span>
-                                    </div>
-                                    <span>Dars soatlari</span>
-                                </a>
->>>>>>> 40e0bc20e558d02476923f168ad0fb9eae1626dc
                             </div>
                         </div>
 
@@ -221,7 +137,7 @@
                         <div class="tab-pane fade " id="tab4" role="tabpanel">
                             <div class="servicesList">
                                 @foreach ($sports as $sport)
-                                <a href="{{ route('educationDetails',$sport->id) }}">
+                                <a href="{{ route('educationDetails2',$sport->id) }}">
                                     <div>
                                         <div class="icon">
                                             <img alt="icon" src="allStyle/image/book svg.jfif">

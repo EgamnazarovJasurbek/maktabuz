@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
+use Illuminate\Pagination\Paginator;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -19,9 +19,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+<<<<<<< HEAD
         view()->composer('layouts.site',function($view){
             $schoolName = \App\Models\SchoolName::all();
             $view->with(compact('schoolName'));
         });
+=======
+        Paginator::useBootstrap();
+>>>>>>> 40fd0d28908682f68c9ff6e1fe6a8259369f9d78
     }
 }

@@ -67,7 +67,7 @@
                         <div class="card-footer text-right">
                             <nav class="d-inline-block">
                                 <ul class="pagination mb-0">
-                                    {{-- {{ $categories->links() }} --}}
+                                    {{ $categories->links() }}
                                 </ul>
                             </nav>
                         </div>

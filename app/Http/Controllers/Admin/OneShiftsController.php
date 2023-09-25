@@ -14,7 +14,7 @@ class OneShiftsController extends Controller
      */
     public function index()
     {
-        $oneshifts = One_shift::all();
+        $oneshifts = One_shift::paginate(5);
         return view('admin.oneshifts.index',compact('oneshifts'));
     }
 

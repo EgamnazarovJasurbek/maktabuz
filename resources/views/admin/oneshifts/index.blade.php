@@ -69,7 +69,7 @@
                         <div class="card-footer text-right">
                             <nav class="d-inline-block">
                                 <ul class="pagination mb-0">
-                                    {{-- {{ $categories->links() }} --}}
+                                    {{ $oneshifts->links() }}
                                 </ul>
                             </nav>
                         </div>

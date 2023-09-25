@@ -43,10 +43,18 @@
             <div class="headerBar">
                 <div class="topMainMenu">
                     <a href="{{ route('index') }}" class="topMain-logo">
+<<<<<<< HEAD
                         <img src="allStyle/image/Gerb.png" alt="" width="8%">
                         @foreach ($schoolName as $name)
                         <p>{{ $name->name_uz }}</p>
                         @endforeach
+=======
+
+
+                        <img src="/allStyle/image/Gerb.png" alt="" width="8%">
+                        <p>329-sonli umumta'lim maktabi</p>
+
+>>>>>>> 40fd0d28908682f68c9ff6e1fe6a8259369f9d78
                     </a>
                     <ul>
                         <li>
@@ -202,10 +210,10 @@
                                     </ul>
                                 </div>
                                 <!-- Search Start-->
-                                <form id="w2" class="mainSearchForm" action="{{ route('search') }}"
+                                <form id="w2" method="GET" class="mainSearchForm" action="{{ route('search') }}"
                                     method="get">
                                     <div class="input-group">
-                                        <input type="text" id="mainSearch" class="form-control"
+                                        <input type="text" name="key" id="mainSearch" class="form-control"
                                             placeholder="Izlash" name="ContentSearch">
 
                                         <div class="input-group-prepend">
@@ -214,7 +222,6 @@
                                             </button>
                                         </div>
                                     </div>
-
                                 </form>
                                 <!-- Search End-->
 

@@ -23,11 +23,15 @@ return new class extends Migration
             $table->string('reception_time_en');
             $table->string('phone')->numeric();
             $table->string('email');
+            $table->string('specialist_oz');
+            $table->string('specialist_uz');
+            $table->string('specialist_ru');
+            $table->string('specialist_en');
             $table->string('biography_oz');
             $table->string('biography_uz');
             $table->string('biography_ru');
             $table->string('biography_en');
-            $table->integer('category_id');
+          
             $table->string('image');
             $table->timestamps();
         });

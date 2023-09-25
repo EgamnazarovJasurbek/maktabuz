@@ -110,28 +110,28 @@
 
                     <div class="leaderInfo">
                         <div class="photo">
-                            <img alt="image" src="allStyle/image/Director.jpg">
+                            <img alt="image" src="/directors/images/{{ $leaderShipDetail->image }}" height="450px">
                         </div>
 
                         <div class="description">
-                            <h1 class="staffTitle"><b>Aripova</b><br> Umida<br> Djangirovna</h1>
+                            <h1 class="staffTitle">{{ $leaderShipDetail->name_uz  }}</h1>
 
-                            <h2>Maktab direktori</h2>
+                            <h2>{{ $leaderShipDetail->specialist_uz }}</h2>
 
                             <div class="contactInfo">
                                 <div>
                                     <i class="far fa-clock"></i>
-                                    <span>Chorshanba soat 16:00 dan 18:00 gacha</span>
+                                    <span>{{ $leaderShipDetail->reception_time_uz  }}</span>
                                 </div>
 
                                 <div>
                                     <i class="fas fa-phone-alt"></i>
-                                    <a href="tel:998 99 871 25 13">998 99 871 25 13</a>
+                                    <a href="tel:998 99 871 25 13">{{ $leaderShipDetail->phone }}</a>
                                 </div>
 
                                 <div>
                                     <i class="far fa-envelope-open"></i>
-                                    <a href="mailto:school329@xtv.uz">school329@xtv.uz</a>
+                                    <a href="mailto:school329@xtv.uz">{{ $leaderShipDetail->email }}</a>
                                 </div>
                             </div>
 

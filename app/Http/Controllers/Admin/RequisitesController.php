@@ -13,7 +13,7 @@ class RequisitesController extends Controller
      */
     public function index()
     {
-        $requisites = Requisite::all();
+        $requisites = Requisite::paginate(5);
         return view('admin.requisites.index',compact('requisites'));
     }
 

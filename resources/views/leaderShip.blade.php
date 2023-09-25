@@ -122,6 +122,7 @@
                 <!-- Direktor -->
                 <div class="container">
                     @foreach ($directors as $director)
+<<<<<<< HEAD
                         <a href="leaderShipDetail.html" class="mainLeader">
                             <img alt="Director" src="directors/images/{{ $director->image }}">
                             <div class="details">
@@ -156,6 +157,37 @@
                                 </a>
                             </div>
                         @endforeach
+=======
+                        <a href="{{ route('leaderShipDetail', $director->id) }}" class="mainLeader">
+                            <img alt="Director" src="/directors/images/{{ $director->image }}" height="450px">
+                            <div class="details">
+                                <h1>{{ $director->name_uz }}</h1>
+                                <span>{{ $director->specialist_uz }}</span>
+                            </div>
+                        </a>
+                    @endforeach
+
+                </div>
+
+                <hr class="sections__line">
+
+                <!-- ZAM Direktors -->
+                <div class="container deputy_director">
+                    <div class="row">
+                        @foreach ($leaderShips as $leaderShip)
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <a href="{{ route('leaderShipDetail', $leaderShip->id) }}" class="deputy_director-main">
+                                    <img src="directors/images/{{ $leaderShip->image }}" width="60%" height="85%"
+                                        alt="Zam Director">
+                                    <div class="deputy_director-details">
+                                        <h1>{{ $leaderShip->name_uz }}</h1>
+                                        <span>{{ $leaderShip->specialist_uz }}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+
+>>>>>>> 40fd0d28908682f68c9ff6e1fe6a8259369f9d78
                     </div>
                 </div>
             </div>

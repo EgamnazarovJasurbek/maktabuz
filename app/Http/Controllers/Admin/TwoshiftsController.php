@@ -14,7 +14,7 @@ class TwoshiftsController extends Controller
      */
     public function index()
     {
-        $twoshifts = Twoshift::all();
+        $twoshifts = Twoshift::paginate(5);
         return view('admin.twoshifts.index',compact('twoshifts'));
     }
        

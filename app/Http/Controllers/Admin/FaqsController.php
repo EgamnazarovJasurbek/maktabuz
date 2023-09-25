@@ -13,7 +13,7 @@ class FaqsController extends Controller
      */
     public function index()
     {
-        $faqss = Faqs::all();
+        $faqss = Faqs::paginate(5);
         return view('admin.faqs.index',compact('faqss'));
     }
 

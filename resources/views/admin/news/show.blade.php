@@ -21,29 +21,18 @@
                             <div class="table-responsive">
                                 <table class="table table-striped" id="table-1">
                                     <tr>
-                                        <th>Title_1 (УЗ)</th> <td>{{ $news->title_1_oz }}</td>
+                                        <th>Title (УЗ)</th> <td>{{ $news->title_oz }}</td>
                                     </tr>
                                     <tr>
-                                        <th>Title_1 (UZ)</th> <td>{{ $news->title_1_uz }}</td>
+                                        <th>Title (UZ)</th> <td>{{ $news->title_uz }}</td>
                                     </tr>
                                     <tr>
-                                        <th>Title_1 (RU)</th> <td>{{ $news->title_1_ru }}</td>
+                                        <th>Title (RU)</th> <td>{{ $news->title_ru }}</td>
                                     </tr>
                                     <tr>
-                                        <th>Title_1 (EN)</th> <td>{{ $news->title_1_en }}</td>
+                                        <th>Title (EN)</th> <td>{{ $news->title_en }}</td>
                                     </tr>
-                                    <tr>
-                                        <th>Title_2 (УЗ)</th> <td>{{ $news->title_2_oz }}</td>
-                                    </tr>
-                                     <tr>
-                                        <th>Title_2 (UZ)</th> <td>{{ $news->title_2_uz }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Title_2 (EN)</th> <td>{{ $news->title_2_ru }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Title_2 (RU)</th> <td>{{ $news->title_2_en }}</td>
-                                    </tr>
+                                   
                                     <tr>
                                         <th>Body (УЗ)</th> <td>{{ $news->body_oz }}</td>
                                     </tr>

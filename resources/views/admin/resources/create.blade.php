@@ -118,14 +118,7 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="form-group">
-                                    <label>Saytga havola</label>
-                                    <input type="file" class="form-control" name="link"
-                                        value="{{ old('link') }}">
-                                    @error('link')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
+                              
                                 <div class="form-group">
                                     <label>Rasm </label>
                                     <input type="file" class="form-control" name="image">

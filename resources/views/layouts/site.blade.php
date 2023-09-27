@@ -43,18 +43,10 @@
             <div class="headerBar">
                 <div class="topMainMenu">
                     <a href="{{ route('index') }}" class="topMain-logo">
-<<<<<<< HEAD
                         <img src="allStyle/image/Gerb.png" alt="" width="8%">
                         @foreach ($schoolName as $name)
                         <p>{{ $name->name_uz }}</p>
                         @endforeach
-=======
-
-
-                        <img src="/allStyle/image/Gerb.png" alt="" width="8%">
-                        <p>329-sonli umumta'lim maktabi</p>
-
->>>>>>> 40fd0d28908682f68c9ff6e1fe6a8259369f9d78
                     </a>
                     <ul>
                         <li>

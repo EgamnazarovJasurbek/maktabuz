@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Admin\SportsController;
+
 use App\Models\Announcements;
 use App\Models\Connection;
 use App\Models\Director;
@@ -73,7 +73,7 @@ class MainController extends Controller
    {
       $directors = Director::Where('specialist_uz','DirektorUz')->get();
       $leaderShips = Director::Where('specialist_uz','!=','DirektorUz')->get()->all();
-      return view('leaderShip',compact('directors','leaderShips'));
+      return view('leaderShip', compact('directors', 'leaderShips'));
    }
    public function leaderShipDetail($id)
    {
@@ -151,11 +151,11 @@ class MainController extends Controller
       
       return view('educationDetails2',compact('sport'));
    }
-   public function newsDetail($id)
+   public function detailNew($id)
    {
       
       $new = News::where('id',$id)->first();
-      return view('newsDetail',compact('new'));
+      return view('detailNew',compact('new'));
    }
    public function newsDetail2($id)
    {

@@ -45,7 +45,7 @@ class ResourcesController extends Controller
             'info_ru' => "required",
             'info_en' => "required",
             'image' => "required",  
-            'link' => "required",  
+            
             'url' => "required",     
         ]);
         $requestData = $request->all();
@@ -55,12 +55,7 @@ class ResourcesController extends Controller
             $file->move('resources/images/', $image_name);
             $requestData['image'] = $image_name;
         }
-        if ($request->hasFile('link')) {
-            $file = $request->file('link');
-            $image_name = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('resources/links/', $image_name);
-            $requestData['link'] = $image_name;
-        }
+       
         Resource::create($requestData);
         return redirect()->route('admin.resources.index')->with('success', 'Resources created succuessfuly');
     }
@@ -102,7 +97,6 @@ class ResourcesController extends Controller
             'info_ru' => "required",
             'info_en' => "required",
             'image' => "required",  
-            'link' => "required",  
             'url' => "required",     
         ]);
         $resources =Resource::findOrFail($id);
@@ -115,12 +109,7 @@ class ResourcesController extends Controller
             $file->move(\public_path('resources/images/'),$resources->image);
             $request['image']=$resources->image;
         }
-        if ($request->hasFile('link')) {
-            $file = $request->file('link');
-            $image_name = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('resources/links/', $image_name);
-            $requestData['link'] = $image_name;
-        }
+       
        
         $resources->update([
             "name_oz" =>$request->name_oz,
@@ -135,7 +124,6 @@ class ResourcesController extends Controller
              "body_uz" =>$request->body_uz, 
              "body_ru" =>$request->body_ru, 
              "body_en" =>$request->body_en, 
-             "link" =>$resources->link,
              "image" =>$resources->image,
          ]);
          return redirect()->route('admin.resources.index')->with('success','Resources updated successfully!');
@@ -151,9 +139,7 @@ class ResourcesController extends Controller
         if(File::exists('resources/images/'.$resources->image)){
             File::delete('resources/images/'.$resources->image);  
         }
-        if(File::exists('resources/links/'.$resources->link)){
-            File::delete('resources/links/'.$resources->link);  
-        }
+       
         $resources->delete();
         return redirect()->route('admin.resources.index')->with('success','Resources deleted successfully!');
     }

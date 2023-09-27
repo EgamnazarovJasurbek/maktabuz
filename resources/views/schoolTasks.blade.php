@@ -89,22 +89,6 @@
                     @foreach ($tasks as $task)
                     <li>{{ $task->body_uz }}</li>
                     @endforeach
-                   
-                    {{-- <li>umumiy o'rta ta'limning davlat ta'lim standartlari va maktabdan tashqari ta'limga qo'yiladigan
-                        davlat talablariga muvofiq umumiy ta'lim muassasalari faoliyatini uslubiy boshqarishni amalga
-                        oshirish;</li>
-                    <li>o'qituvchi kasbining maqomi va obro'sini oshirish, ta'lim muassasalari xodimlarini, shuningdek,
-                        xalq ta'limi tizimi xodimlarini moddiy va ijtimoiy qo'llab -quvvatlash, ularning samarali
-                        ishlashi uchun munosib sharoitlar yaratish;</li>
-                    <li>umumiy o'rta va maktabdan tashqari ta'lim sohasida yagona davlat siyosatini ishlab chiqish va
-                        amalga oshirish, o'quvchilarning ma'naviy, axloqiy, intellektual va jismoniy rivojlanish
-                        darajasini yanada oshirish;</li>
-                    <li>ta'lim muassasalarida chet tillarini o'qitish samaradorligini ta'minlashga qaratilgan kompleks
-                        chora -tadbirlarni amalga oshirish;</li>
-                    <li>o'quv jarayoniga o'quvchilarning ta'limiy, psixologik va jismoniy stressini optimallashtirishni
-                        hisobga olgan holda, ta'limning innovatsion shakllarini, zamonaviy pedagogik va axborot
-                        texnologiyalarini, kasbiy yo'naltirish, o'qitish va o'qitishning samarali usullarini joriy
-                        etish;</li> --}}
                 </ul>
             </div>
         </section>

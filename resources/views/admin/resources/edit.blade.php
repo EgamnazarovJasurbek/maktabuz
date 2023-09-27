@@ -119,14 +119,7 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="form-group">
-                                    <label>Saytga havola</label>
-                                    <input type="file" class="form-control" name="link">
-                                    @error('link')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                    <img width="200px" class="mt-3" src="{{ asset('resources/links/'. $resource->link) }}" alt="">
-                                </div>
+                               
                                 <div class="form-group">
                                     <label>Rasm </label>
                                     <input type="file" class="form-control" name="image">

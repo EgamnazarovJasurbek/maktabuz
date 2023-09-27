@@ -32,14 +32,11 @@ class NewsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'title_1_oz' => "required", 
-            'title_1_uz' => "required", 
-            'title_1_ru' => "required", 
-            'title_1_en' => "required", 
-            'title_2_oz' => "required",
-            'title_2_uz' => "required",
-            'title_2_ru' => "required",
-            'title_2_en' => "required",
+            'title_oz' => "required", 
+            'title_uz' => "required", 
+            'title_ru' => "required", 
+            'title_en' => "required", 
+           
             'body_oz' => "required", 
             'body_uz' => "required",   
             'body_ru' => "required",  
@@ -82,14 +79,11 @@ class NewsController extends Controller
     public function update(Request $request, string $id)
     {
         $this->validate($request,[
-            'title_1_oz' => "required", 
-            'title_1_uz' => "required", 
-            'title_1_ru' => "required", 
-            'title_1_en' => "required", 
-            'title_2_oz' => "required",
-            'title_2_uz' => "required",
-            'title_2_ru' => "required",
-            'title_2_en' => "required",
+            'title_oz' => "required", 
+            'title_uz' => "required", 
+            'title_ru' => "required", 
+            'title_en' => "required", 
+           
             'body_oz' => "required", 
             'body_uz' => "required",   
             'body_ru' => "required",  
@@ -108,14 +102,10 @@ class NewsController extends Controller
             $request['image']=$news->image;
         }
         $news->update([
-           "title_1_oz" =>$request->title_1_oz,
-           "title_1_uz" =>$request->title_1_uz,
-           "title_1_ru" =>$request->title_1_ru,
-           "title_1_en" =>$request->title_1_en,
-           "title_2_oz" =>$request->title_2_oz,
-           "title_2_uz" =>$request->title_2_uz,
-           "title_2_ru" =>$request->title_2_ru,
-           "title_2_en" =>$request->title_2_en,
+           "title_oz" =>$request->title_oz,
+           "title_uz" =>$request->title_uz,
+           "title_ru" =>$request->title_ru,
+           "title_en" =>$request->title_en,
             "body_oz" =>$request->body_oz,
             "body_uz" =>$request->body_uz, 
             "body_ru" =>$request->body_ru, 

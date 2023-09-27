@@ -20,7 +20,7 @@ use App\Http\Controllers\Admin\TeachersController;
 use App\Http\Controllers\Admin\TwoshiftsController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProfileController;
-use App\Models\Contact;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,7 +41,7 @@ Route::get('/lang/{lang}', function($lang){
    return back();
 });
 
-//sdsadadagdsf
+
 
 Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/connections', [MainController::class, 'connections'])->name('connections');
@@ -63,8 +63,8 @@ Route::get('/teacher', [MainController::class, 'teacher'])->name('teacher');
 Route::get('/teacherDetail/{id}', [MainController::class, 'teacherDetail'])->name('teacherDetail');
 Route::get('/usefulResurs', [MainController::class, 'usefulResurs'])->name('usefulResurs');
 Route::get('/usefulResursDetail/{id}', [MainController::class, 'usefulResursDetail'])->name('usefulResursDetail');
-Route::get('/newsDetail', [MainController::class, 'newsDetail'])->name('newsDetail');
-Route::get('/newsDetail/{id}', [MainController::class, 'newsDetail'])->name('newsDetail');
+// Route::get('/newsDetail', [MainController::class, 'newsDetail'])->name('newsDetail');
+Route::get('/detailNew/{id}', [MainController::class, 'detailNew'])->name('detailNew');
 Route::get('/newsDetail2/{id}', [MainController::class, 'newsDetail2'])->name('newsDetail2');
 
 

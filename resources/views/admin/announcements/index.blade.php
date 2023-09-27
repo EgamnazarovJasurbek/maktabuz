@@ -30,8 +30,7 @@
                                             <th class="text-center">
                                                 T/R
                                             </th>
-                                            <th>Sarlavha_1</th>
-                                            <th>Sarlavha_2</th>
+                                            <th>Sarlavha</th>
                                             <th>Matn</th>
                                             <th>Rasm</th>
                                             <th>Action</th>
@@ -39,8 +38,8 @@
                                         @foreach ($announcements as $announcement)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $announcement->title_1_uz }}</td>
-                                                <td>{{ $announcement->title_2_uz }}</td>
+                                                <td>{{ $announcement->title_uz }}</td>
+                                                {{-- <td>{{ $announcement->title_2_uz }}</td> --}}
                                                 <td>{!! \Str::limit($announcement->body_uz,20) !!}</td>
                                                 <td>
                                                     

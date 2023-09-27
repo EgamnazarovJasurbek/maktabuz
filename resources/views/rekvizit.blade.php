@@ -49,48 +49,26 @@
                         <p></p>
                         <p><strong>{{ $requisite->title_uz }}</strong></p>
 
-<<<<<<< HEAD
+
                         <p>Qabul qiluvchi: {{ $requisite->recipient_uz }}</p>
-                        <p>@lang('words.qabulQiluvci'): mintaqalararo operatsion UFK (O'zbekiston Respublikasi&nbsp; Xalq ta'limi
-                            vazirligi)</p>
-=======
 
-                    <p>Qabul qiluvchi: {{ $requisite->recipient_uz }}</p>
 
-                    {{-- <p>@lang('words.qabulQiluvci'): mintaqalararo operatsion UFK (O'zbekiston Respublikasi&nbsp; Xalq ta'limi
-                        vazirligi)</p> --}}
-
->>>>>>> 40fd0d28908682f68c9ff6e1fe6a8259369f9d78
 
                         <p>INN: {{ $requisite->tin }}</p>
 
                         <p>KPP: {{ $requisite->checkpoint }}</p>
 
-<<<<<<< HEAD
+
                         <p>Bank nomi: {{ $requisite->bank_name_uz }}</p>
-                        <p>@lang('words.bankName'): Aloqabank, Toshkent</p>
-=======
 
-                    <p>Bank nomi: {{  $requisite->bank_name_uz }}</p>
-
-                    {{-- <p>@lang('words.bankName'): Aloqabank, Toshkent</p> --}}
-
->>>>>>> 40fd0d28908682f68c9ff6e1fe6a8259369f9d78
 
                         <p>BIK: {{ $requisite->bic }}</p>
 
-<<<<<<< HEAD
+
                         <p>Hisob: {{ $requisite->account }}</p>
+
+                        <p></p>
                     </div>
-=======
-
-                    <p>Hisob: {{  $requisite->account }}</p>
-
-                    {{-- <p>@lang('words.hisob'): 3100643000000019500</p> --}}
-
-                    <p></p>
-                </div>
->>>>>>> 40fd0d28908682f68c9ff6e1fe6a8259369f9d78
                 @endforeach
 
             </div>

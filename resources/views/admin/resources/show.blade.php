@@ -61,14 +61,7 @@
                                         <th>Url</th> <td>{{ $resource->url }}</td>
                                     </tr>
                                    
-                                    <tr>
-                                        <th>Link</th>
-                                    <td>
-                                              
-                                             <img alt="image" src="/resources/links/{{ $resource->image }}" width="100">
-
-                                     </td>
-                                    </tr> 
+                                    
                                     <tr>
                                         <th>Created_at </th> <td>{{ $resource->created_at }}</td>
                                     </tr>

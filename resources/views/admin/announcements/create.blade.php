@@ -21,69 +21,38 @@
                             <div class="card-body">
                                
                                 <div class="form-group">
-                                    <label>Sarlavha_1 (УЗ)</label>
-                                    <input type="text" class="form-control" name="title_1_oz"
-                                        value="{{ old("title_1_oz") }}">
-                                    @error("title_1_oz")
+                                    <label>Sarlavha (УЗ)</label>
+                                    <input type="text" class="form-control" name="title_oz"
+                                        value="{{ old("title_oz") }}">
+                                    @error("title_oz")
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label>Sarlavha_1 (Uz)</label>
-                                    <input type="text" class="form-control" name="title_1_uz"
-                                        value="{{ old('title_1_uz') }}">
-                                    @error('title_1_uz')
+                                    <label>Sarlavha (Uz)</label>
+                                    <input type="text" class="form-control" name="title_uz"
+                                        value="{{ old('title_uz') }}">
+                                    @error('title_uz')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label>Sarlavha_1 (Ru)</label>
-                                    <input type="text" class="form-control" name="title_1_ru"
-                                        value="{{ old('title_1_ru') }}">
-                                    @error('title_1_ru')
+                                    <label>Sarlavha (Ru)</label>
+                                    <input type="text" class="form-control" name="title_ru"
+                                        value="{{ old('title_ru') }}">
+                                    @error('title_ru')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label>Sarlavha_1 (En)</label>
-                                    <input type="text" class="form-control" name="title_1_en"
-                                        value="{{ old('title_1_en') }}">
-                                    @error('title_1_en')
+                                    <label>Sarlavha (En)</label>
+                                    <input type="text" class="form-control" name="title_en"
+                                        value="{{ old('title_en') }}">
+                                    @error('title_en')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="form-group">
-                                    <label>Sarlavha_2 (УЗ)</label>
-                                    <input type="text" class="form-control" name="title_2_oz"
-                                        value="{{ old("title_2_oz") }}">
-                                    @error("title_2_oz")
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <label>Sarlavha_2 (Uz)</label>
-                                    <input type="text" class="form-control" name="title_2_uz"
-                                        value="{{ old('title_2_uz') }}">
-                                    @error('title_2_uz')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <label>Sarlavha_2 (Ru)</label>
-                                    <input type="text" class="form-control" name="title_2_ru"
-                                        value="{{ old('title_2_ru') }}">
-                                    @error('title_2_ru')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <label>Sarlavha_2 (En)</label>
-                                    <input type="text" class="form-control" name="title_2_en"
-                                        value="{{ old('title_2_en') }}">
-                                    @error('title_2_en')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
+                             
                                 {{-- Add Product DESC --}}
                                 <div class="form-group">
                                     <label>Matn (УЗ)</label>

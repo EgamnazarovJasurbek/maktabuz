@@ -28,12 +28,12 @@
           <li class="dropdown">
             <a href="{{ route('admin.categories.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Categories</span></a>
           </li>
-          <li class="dropdown">
+          {{-- <li class="dropdown">
             <a href="{{ route('admin.lessons.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Qo'shimcha darslar</span></a>
-          </li>
-          <li class="dropdown">
+          </li> --}}
+          {{-- <li class="dropdown">
             <a href="{{ route('admin.sports.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Sport to'garaklar</span></a>
-          </li>
+          </li> --}}
           <li class="dropdown">
             <a href="{{ route('admin.tasks.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Maktab Vazifalari</span></a>
           </li>
@@ -49,6 +49,8 @@
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="{{ route('admin.oneshifts.index') }}">1-Smena</a></li>
             <li><a class="nav-link" href="{{ route('admin.twoshifts.index') }}">2-Smena</a></li>
+            <li><a class="nav-link" href="{{ route('admin.lessons.index') }}">Qo'shimcha darslar</a></li>
+            <li><a class="nav-link" href="{{ route('admin.sports.index') }}">Sport To'garaklari</a></li>
           </ul>
         </li>
         <li class="dropdown">

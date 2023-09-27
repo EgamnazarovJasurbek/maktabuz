@@ -13,14 +13,10 @@ return new class extends Migration
     {
         Schema::create('announcements', function (Blueprint $table) {
             $table->id();
-            $table->string("title_1_uz");
-            $table->string("title_1_oz");
-            $table->string("title_1_ru");
-            $table->string("title_1_en"); 
-            $table->string("title_2_uz");
-            $table->string("title_2_oz");
-            $table->string("title_2_ru");
-            $table->string("title_2_en"); 
+            $table->string("title_uz");
+            $table->string("title_oz");
+            $table->string("title_ru");
+            $table->string("title_en"); 
             $table->text("body_oz");
             $table->text("body_uz");
             $table->text("body_ru");

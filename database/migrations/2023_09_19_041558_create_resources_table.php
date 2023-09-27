@@ -26,7 +26,6 @@ return new class extends Migration
             $table->text('info_ru');
             $table->text('info_en');
             $table->string('url');
-            $table->string('link');
             $table->string('image');
             $table->timestamps();
         });

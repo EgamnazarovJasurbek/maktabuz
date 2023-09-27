@@ -61,19 +61,11 @@
                     <h1 class="gallery_title">@lang('words.schoolGallery')</h1>
                     <div class="row">
                         @foreach ($galleries as $gallery)
-                        <div class="col-12 mb-2">
-                            <img src="galleries/images/{{ $gallery->image }}" alt="Img" width="100%" height="90%">
-                        </div>
+                            <div class="col-12 mb-2">
+                                <img src="galleries/images/{{ $gallery->image }}" alt="Img" width="100%"
+                                    height="90%">
+                            </div>
                         @endforeach
-                        {{-- <div class="col-12 mb-2">
-                            <img src="allStyle/image/329-maktab.jpg" alt="Img" width="100%" height="90%">
-                        </div>
-                        <div class="col-12 mb-2">
-                            <img src="allStyle/image/ImgChidlrens.jpg" alt="Img" width="100%" height="90%">
-                        </div>
-                        <div class="col-12 mb-2">
-                            <img src="allStyle/image/img_zoom.jpg" alt="Img" width="100%" height="90%">
-                        </div> --}}
                     </div>
                 </div>
             </div>

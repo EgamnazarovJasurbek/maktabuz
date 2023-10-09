@@ -1,5 +1,38 @@
 @extends('layouts.site')
 <style>
+     @media (max-width:480px) {
+        .topMain-logo {
+            position: absolute;
+            top: 18% !important;
+            right: 35% !;
+            color: black;
+        }
+
+        .additionalFuntions {
+            position: absolute;
+            top: 25% !important;
+            right: 3%;
+        }
+
+        .leaderInfo {
+            display: block !important;
+        }
+
+        .leaderInfo .photo {
+            width: 100% !important; 
+            height: 72% !important;
+            text-align: center !important;
+        }
+
+        .leaderInfo .photo img {
+            width: 100% !important; 
+        }
+        .leaderInfo .description .staffTitle{
+            margin-top: 65px !important;
+            font-size: 22px !important;
+        }
+    
+    }
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;

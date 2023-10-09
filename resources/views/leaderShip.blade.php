@@ -1,5 +1,63 @@
 @extends('layouts.site')
 <style>
+    @media (max-width:480px) {
+        .topMain-logo {
+            position: absolute;
+            top: 19% !important;
+            right: 35%;
+            color: black;
+        }
+
+        .additionalFuntions {
+            position: absolute;
+            top: 24% !important;
+            right: 3%;
+        }
+
+        .mainLeader {
+            display: inline-block;
+            width: 0;
+        }
+
+        .mainLeader .details {
+            padding: 38px 0;
+        }
+
+        .mainLeader .details h1 {
+            font-size: 27px;
+            padding-left: 2px;
+            margin-bottom: 25px;
+        }
+
+        .mainLeader .details span {
+            padding-left: 2px;
+        }
+
+        .mainLeader .details span::after {
+            top: -25% !important;
+            left: 71%;
+        }
+
+        .deputy_director {
+            margin-top: 67px;
+            padding-left: 94px;
+        }
+
+        .mainLeader img {
+            margin-left: 52px;
+        }
+
+        .mainLeader .details h1 {
+            font-size: 27px;
+            padding-left: 52px;
+            margin-bottom: 25px;
+        }
+
+        .mainLeader .details span {
+            padding-left: 52px;
+        }
+    }
+
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;

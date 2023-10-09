@@ -1,5 +1,23 @@
 @extends('layouts.site')
 <style>
+        @media (max-width:480px) {
+        .topMain-logo {
+            position: absolute;
+            top: 17% !important;
+            right: 35%;
+            color: black;
+        }
+
+        .additionalFuntions {
+            position: absolute;
+            top: 24% !important;
+            right: 3%;
+        }
+
+        .infografika_content {
+            grid-template-columns: none;
+        }
+    }
     @media (max-width:412px) {
         .topMain-logo {
             position: absolute;

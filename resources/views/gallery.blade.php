@@ -62,7 +62,7 @@
                     <div class="row">
                         @foreach ($galleries as $gallery)
                             <div class="col-12 mb-2">
-                                <img src="galleries/images/{{ $gallery->image }}" alt="Img" width="100%"
+                                <img src="{{ asset('galleries/images/' . $gallery->image) }}" alt="Img" width="100%"  
                                     height="90%">
                             </div>
                         @endforeach

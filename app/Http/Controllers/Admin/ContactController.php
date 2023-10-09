@@ -30,6 +30,13 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,[
+            "name" => "required",
+            "email" => "required",
+            "phone" => "required",
+            "mavzu" => "required",
+            "message" => "required",
+        ]);
         Contact::create($request->all());
         return back()->with('success', 'Malumotlar muvaffaqiyatli yuborildi. Rahmat!');
     }

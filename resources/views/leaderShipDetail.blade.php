@@ -109,19 +109,19 @@
                 <div class="container">
 
                     <div class="leaderInfo">
-                        <div class="photo">
-                            <img alt="image" src="/directors/images/{{ $leaderShipDetail->image }}" height="450px">
+                        <div class="photo">   
+                            <img alt="image" src="{{ asset('directors/images/' . $leaderShipDetail->image ) }}" height="500px">
                         </div>
 
                         <div class="description">
-                            <h1 class="staffTitle">{{ $leaderShipDetail->name_uz  }}</h1>
+                            <h1 class="staffTitle">{{ $leaderShipDetail['name_' . \App::getLocale()]  }}</h1>
 
-                            <h2>{{ $leaderShipDetail->specialist_uz }}</h2>
+                            <h2>{{ $leaderShipDetail['specialist_' . \App::getLocale()] }}</h2>
 
                             <div class="contactInfo">
                                 <div>
                                     <i class="far fa-clock"></i>
-                                    <span>{{ $leaderShipDetail->reception_time_uz  }}</span>
+                                    <span>{{ $leaderShipDetail['reception_time_' . \App::getLocale()]  }}</span>
                                 </div>
 
                                 <div>
@@ -141,8 +141,7 @@
                                 <a data-toggle="collapse" href="#collapseExample" role="button">Biografiya</a>
 
                                 <div class="collapse" id="collapseExample">
-                                    <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste a,
-                                        earum commodi accusantium officiis id.</div>
+                                    <div class="item">{{ $leaderShipDetail['biography_' . \App::getLocale()] }}</div>
                                 </div>
                             </div>
                         </div>

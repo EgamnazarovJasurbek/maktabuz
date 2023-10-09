@@ -39,10 +39,9 @@
                                         @foreach ($faqss as $faqs)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $faqs->title_uz }}</td>
-                                                <td>{{ $faqs->body_uz }}</td>
-                                                
+                                                <td>{!! \Str::limit($faqs->title_uz,20) !!}</td>
                                                
+                                                <td>{!! \Str::limit($faqs->body_uz,20) !!}</td>
                                                 <td>
                                                     <a href="{{ route('admin.faqs.edit', $faqs->id) }}"
                                                         class="btn btn-success">Edit</a>

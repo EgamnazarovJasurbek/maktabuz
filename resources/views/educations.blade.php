@@ -86,11 +86,11 @@
                                 <a href="{{ asset('oneshifts/file/' . $oneshift->image) }}">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
+                                            <img alt="icon" src="{{ asset('allStyle/image/book svg.jfif') }}">
                                         </div>
-                                        <span>{{ $oneshift->name_uz }}</span>
+                                        <span>{{ $oneshift['name_' . \App::getLocale()] }}</span>
                                     </div>
-                                    <span>{{ $oneshift->name_uz }}</span>
+                                    <span>{{ $oneshift['name_' . \App::getLocale()] }}</span>
                                 </a>
                                 @endforeach 
 
@@ -105,11 +105,11 @@
                                 <a href="{{ asset('twoshifts/file/' . $twoshift->image) }}">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
+                                            <img alt="icon" src="{{ asset('allStyle/image/book svg.jfif') }}">
                                         </div>
-                                        <span>{{ $twoshift->name_uz }}</span>
+                                        <span>{{ $twoshift['name_' . \App::getLocale()] }}</span>
                                     </div>
-                                    <span>{{ $twoshift->name_uz }}</span>
+                                    <span>{{ $twoshift['name_' . \App::getLocale()] }}</span>
                                 </a>
                                 @endforeach  
                             </div>
@@ -121,11 +121,11 @@
                                 <a href="{{ route('educationDetails',$education->id) }}">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
+                                            <img alt="icon" src="{{ asset('lessons/images/' . $education->image) }}" width="90px">
                                         </div>
-                                        <span>{{ $education->name_uz }}</span>
+                                        <span>{{ $education['name_' . \App::getLocale()] }}</span>
                                     </div>
-                                    <span>{{ $education->name_uz }}</span>
+                                    <span>{{ $education['name_' . \App::getLocale()] }}</span>
                                 </a>
                                 @endforeach
                               
@@ -140,11 +140,11 @@
                                 <a href="{{ route('educationDetails2',$sport->id) }}">
                                     <div>
                                         <div class="icon">
-                                            <img alt="icon" src="allStyle/image/book svg.jfif">
+                                            <img alt="icon" src="{{ asset('sports/images/' . $sport->image) }}" width="90px">
                                         </div>
-                                        <span>{{ $sport->name_uz }} </span>
+                                        <span>{{ $sport['name_' . \App::getLocale()] }} </span>
                                     </div>
-                                    <span>{{ $sport->name_uz }}</span>
+                                    <span>{{ $sport['name_' . \App::getLocale()] }}</span>
                                 </a>
                                 @endforeach
                               

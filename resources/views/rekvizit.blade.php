@@ -47,10 +47,10 @@
                 @foreach ($requisites as $requisite)
                     <div class="page_content mb-5 mt-5"><b></b>
                         <p></p>
-                        <p><strong>{{ $requisite->title_uz }}</strong></p>
+                        <p><strong>{{ $requisite['title_' . \App::getLocale()] }}</strong></p>
 
 
-                        <p>Qabul qiluvchi: {{ $requisite->recipient_uz }}</p>
+                        <p>Qabul qiluvchi: {{ $requisite['recipient_' . \App::getLocale()] }}</p>
 
 
 
@@ -59,7 +59,7 @@
                         <p>KPP: {{ $requisite->checkpoint }}</p>
 
 
-                        <p>Bank nomi: {{ $requisite->bank_name_uz }}</p>
+                        <p>Bank nomi: {{ $requisite['bank_name_' . \App::getLocale()] }}</p>
 
 
                         <p>BIK: {{ $requisite->bic }}</p>

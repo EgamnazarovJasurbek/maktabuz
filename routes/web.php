@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdsController;
 use App\Http\Controllers\Admin\AnnouncementsController;
 use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\ConnectionsController;
@@ -91,7 +92,7 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::resource('galleries', GalleriesController::class);
     Route::resource('schoolName', SchoolNameController::class);
     Route::resource('contact',COntactController::class);
-
+    Route::resource('ads',AdsController::class);
 });
 
 Route::middleware('auth')->group(function () {

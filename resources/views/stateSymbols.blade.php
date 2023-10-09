@@ -49,7 +49,7 @@
                             <!-- Gerb -->
                             <h2 style="text-transform: uppercase;">@lang('words.gerb')</h2>
                             <div class="col-12 text-center mt-5">
-                                <img src="allStyle/image/Gerb.png" alt="Img" width="20%">
+                                <img src="{{ asset('allStyle/image/Gerb.png') }}" alt="Img" width="20%">
                             </div>
                             <p style="font-size: 18px; font-weight: 400;">
                                 <br> <br>@lang('words.gerbText')<br> <br>
@@ -59,7 +59,7 @@
                             <!-- Bayrog' -->
                             <h2 style="text-transform: uppercase; margin-top: 50px;">@lang('words.flag')</h2>
                             <div class="col-12 text-center mt-5">
-                                <img src="allStyle/image/Flag-uz.jpg" alt="Img" width="30%">
+                                <img src="{{ asset('allStyle/image/Flag-uz.jpg') }}" alt="Img" width="30%">
                             </div>
                             <p style="font-size: 18px; font-weight: 400;">
                                 <br> <br>@lang('words.flagText') <br> <br>

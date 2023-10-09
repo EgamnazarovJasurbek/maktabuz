@@ -2,15 +2,15 @@
 @section('content')
     <!-- Big logo start -->
     @foreach ($schoolName as $name)
-        <div class="bigBannerContent" style="background-image: url('/schoolName/images/{{ $name->image }}');">
+        <div class="bigBannerContent" style="background-image: url({{ asset('schoolName/images/'. $name->image ) }});">
             <div class="bannerContent">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="logoTextBox">
                             <div class="col-12"></div>
                             <h1 class="logoTextBox__title text-center">
-                                <b>{{ $name->name_uz }}</b> <br>
-                                {{ $name->city_uz }}
+                                <b>{{ $name['name_' . \App::getLocale()] }}</b> <br>
+                                {{ $name['city_' . \App::getLocale()] }}
                             </h1>
                             <div class="quote text-center">
                                 <p class="">"@lang('words.PrezidentText')"</p>
@@ -36,9 +36,9 @@
             <div class="container">
                 <!-- Service List Start  -->
                 <div class="mainServicesList">
-                    <a href="#">
+                    <a href="{{ route("educations") }}">
                         <div class="icon">
-                            <img alt="icon" src="allStyle/image/oquvchi.png" width="45%" style="margin-left: 60px;">
+                            <img alt="icon" src="{{ asset('allStyle/image/oquvchi.png') }}" width="45%" style="margin-left: 60px;">
                         </div>
                         <h1>@lang('words.forPeoples')</h1>
                         <div class="description">
@@ -52,7 +52,7 @@
                     </a>
                     <a href="#">
                         <div class="icon">
-                            <img alt="icon" src="allStyle/image/Ota-ona.png" width="45%" style="margin-left: 75px;">
+                            <img alt="icon" src="{{ asset('allStyle/image/Ota-ona.png') }}" width="45%" style="margin-left: 75px;">
                         </div>
                         <h1>@lang('words.forParents')</h1>
                         <div class="description">
@@ -63,7 +63,7 @@
                     </a>
                     <a href="#">
                         <div class="icon">
-                            <img alt="icon" src="allStyle/image/oqtuvchi.png" width="45%" style="margin-left: 80px;">
+                            <img alt="icon" src="{{ asset('allStyle/image/oqtuvchi.png') }}" width="45%" style="margin-left: 80px;">
                         </div>
                         <h1>@lang('words.forTeachers')</h1>
                         <div class="description">
@@ -83,7 +83,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="school_info" data-tilt data-tilt-scale="1.1">
                                 <h2>{{ $slider->number }}</h2>
-                                <p>{{ $slider->title_uz }}</p>
+                                <p>{{ $slider['title_' . \App::getLocale()] }}</p>
                             </div>
                         </div>
                     @endforeach
@@ -107,7 +107,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow fadeInRight" data-wow-duration=".9s" data-wow-delay=".6s">
                             <div class="onlineSchool__img">
-                                <img src="allStyle/image/onlineSchool2.png" width="75%" alt="OnlineSchool">
+                                <img src="{{ asset('allStyle/image/onlineSchool2.png') }}" width="75%" alt="OnlineSchool">
                             </div>
                         </div>
                     </div>
@@ -123,9 +123,9 @@
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s">
                                 <a href="{{ route('detailNew', $new->id) }}">
                                     <div class="imageBox">
-                                        <img alt="image" src="news/images/{{ $new->image }}" width="170px">
+                                        <img alt="image" src="{{ asset('news/images/' . $new->image) }}" width="170px">
                                     </div>
-                                    <h1>{{ $new->title_1_uz }}</h1>
+                                    <h1>{{ $new['title_' . \App::getLocale()] }}</h1>
                                     <span>{{ $new->created_at->format(' d.M.Y') }}</span>
                                 </a>
                             </div>
@@ -190,7 +190,9 @@
                             </form>
                         </div>
                         <div class="col-lg-5 col-md-12">
-                            <h2 class="mb-3 contact__title">329-sonli umumta’lim maktabi</h2>
+                            @foreach ($schoolName as $name)
+                            <h2 class="mb-3 contact__title">{{ $name['name_' . \App::getLocale()] }}</h2>
+                            @endforeach
 
                             <table id="w9" class="table table-striped table-bordered detail-view">
                                 @foreach ($connections as $connection)
@@ -230,46 +232,46 @@
                     <div class="container">
                         <h1 class="mb-5">@lang('words.usefulLinks')</h1>
                         <div class="slider">
-                            <a href="">
+                            <a href="https://kitob.uz/">
                                 <div class="slider_content">
-                                    <img src="allStyle/image/gerb_slider.jpg" width="10%" alt="Image 1">
-                                    <h1>O'zbekiston respulikasi davlat maktabi 1</h1>
+                                    <img src="{{ asset('allStyle/image/kutubxona.jpg') }}" width="10%" alt="Image 1">
+                                    <h1>Respublika bolalar kutubxonasi</h1>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://gov.uz/">
                                 <div class="slider_content">
-                                    <img src="allStyle/image/Oliy majlis.jpg" width="10%" alt="Image 1">
+                                    <img src="{{ asset('allStyle/image/Oliy majlis.jpg') }}" width="10%" alt="Image 1">
                                     <h1>O'zbekiston Respublikasi hukumat portali</h1>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://my.gov.uz/oz">
                                 <div class="slider_content">
-                                    <img src="allStyle/image/mygovUz.jpg" width="10%" alt="Image 1">
+                                    <img src="{{ asset('allStyle/image/mygovUz.jpg') }}" width="10%" alt="Image 1">
                                     <h1>Yagona interaktiv davlat xizmatlari</h1>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://president.uz/uz">
                                 <div class="slider_content">
-                                    <img src="allStyle/image/gerb_slider.jpg" width="10%" alt="Image 1">
-                                    <h1>O'zbekiston respulikasi davlat maktabi 1</h1>
+                                    <img src="{{ asset('allStyle/image/gerb_slider.jpg') }}" width="10%" alt="Image 1">
+                                    <h1>O'zbekiston Respulikasi Prezidentining rasmiy veb-sayti</h1>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://dxa.gov.uz/oz/site/login">
                                 <div class="slider_content">
-                                    <img src="allStyle/image/gerb_slider.jpg" width="10%" alt="Image 1">
-                                    <h1>O'zbekiston respulikasi davlat maktabi 1</h1>
+                                    <img src="{{ asset('allStyle/image/DXA-01.png') }}" width="10%" alt="Image 1">
+                                    <h1>Davlat Xizmatlari Agentligi</h1>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://pm.gov.uz/ru#/">
                                 <div class="slider_content">
-                                    <img src="allStyle/image/gerb_slider.jpg" width="10%" alt="Image 1">
-                                    <h1>O'zbekiston respulikasi Prezidentining virtual portali</h1>
+                                    <img src="{{ asset('allStyle/image/gerb_slider.jpg') }}" width="10%" alt="Image 1">
+                                    <h1>O'zbekiston Respulikasi Prezidentining virtual qabulxonasi</h1>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://argos.uz/oz">
                                 <div class="slider_content">
-                                    <img src="allStyle/image/mygovUz.jpg" width="10%" alt="Image 1">
-                                    <h1>Respulika Bolalar kutubxonasi</h1>
+                                    <img src="{{ asset('allStyle/image/argos.png') }}" width="10%" alt="Image 1">
+                                    <h1>O'zbekiston Respublikasi davlat xizmatlarini rivojlantirish agentligi</h1>
                                 </div>
                             </a>
                         </div>

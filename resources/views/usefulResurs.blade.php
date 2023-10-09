@@ -56,10 +56,10 @@
                     <div class="projectsList">
                         @foreach ($resources as $resource)
                             <a class="item" href="{{ route('usefulResursDetail', $resource->id) }}">
-                                <img alt="logo" src="resources/images/{{ $resource->image }}">
+                                <img alt="logo" src="{{ asset('resources/images/' . $resource->image) }}">
                                 <div class="description">
-                                    <h1>{{ $resource->name_uz }}</h1>
-                                    <h3>{{ $resource->body_uz }}
+                                    <h1>{{ $resource['name_' . \App::getLocale()] }}</h1>
+                                    <h3>{{ $resource['body_' . \App::getLocale()] }}
                                     </h3>
                                 </div>
                             </a>

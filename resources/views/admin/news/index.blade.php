@@ -38,7 +38,7 @@
                                         @foreach ($news as $new)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $new->title_uz }}</td>
+                                                <td>{!! \Str::limit($new->title_uz,20) !!}</td>
                                                
                                                 <td>{!! \Str::limit($new->body_uz,20) !!}</td>
                                                 <td>

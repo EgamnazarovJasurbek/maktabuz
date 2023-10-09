@@ -71,8 +71,8 @@ class MainController extends Controller
    }
    public function leaderShip()
    {
-      $directors = Director::Where('specialist_uz','DirektorUz')->get();
-      $leaderShips = Director::Where('specialist_uz','!=','DirektorUz')->get()->all();
+      $directors = Director::Where('specialist_uz','Direktor')->get();
+      $leaderShips = Director::Where('specialist_uz','!=','Direktor')->get()->all();
       return view('leaderShip', compact('directors', 'leaderShips'));
    }
    public function leaderShipDetail($id)
@@ -104,10 +104,10 @@ class MainController extends Controller
    public function search(Request $request)
    {
       $key = $request->key;
-      $news = News::where('title_1_uz','like', '%'.$key.'%')
-      ->orWhere('title_1_ru','like', '%'.$key.'%') 
-      ->orWhere('title_1_en','like', '%'.$key.'%') 
-      ->orWhere('title_1_oz','like', '%'.$key.'%')      
+      $news = News::where('title_uz','like', '%'.$key.'%')
+      ->orWhere('title_ru','like', '%'.$key.'%') 
+      ->orWhere('title_en','like', '%'.$key.'%') 
+      ->orWhere('title_oz','like', '%'.$key.'%')      
       ->orWhere('body_uz','like', '%'.$key.'%')      
       ->orWhere('body_oz','like', '%'.$key.'%')      
       ->orWhere('body_en','like', '%'.$key.'%')      

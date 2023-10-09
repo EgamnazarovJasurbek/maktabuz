@@ -77,8 +77,9 @@ class TeachersController extends Controller
      */
     public function edit(string $id)
     {
+        $categories = Category::all();
         $teacher = Teacher::findOrFail($id);
-        return view('admin.teachers.edit',compact('teacher'));
+        return view('admin.teachers.edit',compact('teacher','categories'));
     }
 
     /**

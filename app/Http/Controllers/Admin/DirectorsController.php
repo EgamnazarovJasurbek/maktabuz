@@ -15,7 +15,7 @@ class DirectorsController extends Controller
      */
     public function index()
     {
-        $directors = Director::paginate(2);
+        $directors = Director::paginate(5);
         return view('admin.directors.index',compact('directors'));
     }
 
@@ -100,16 +100,15 @@ class DirectorsController extends Controller
             "specialist_uz" => "required",
             "specialist_ru" => "required",
             "specialist_en" => "required",
-            "category_id" => "required",
             "phone" => "required|numeric",
             "reception_time_oz" => "required",
             "reception_time_uz" => "required",
             "reception_time_ru" => "required",
             "reception_time_en" => "required",
-             "biography_oz" => "required",
-             "biography_uz" => "required", 
-             "biography_ru" => "required", 
-             "biography_en" => "required", 
+             "biography_oz" => "required|max:255",
+             "biography_uz" => "required|max:255", 
+             "biography_ru" => "required|max:255", 
+             "biography_en" => "required|max:255", 
              "image" => "required",  
         ]);
 
@@ -129,7 +128,6 @@ class DirectorsController extends Controller
             "name_ru" =>$request->name_ru,
             "name_en" =>$request->name_en,
             "email" =>$request->email,
-            "category_id" =>$request->category_id,
             "phone" =>$request->phone,
             "specialist_oz" =>$request->specialist_oz,
             "specialist_uz" =>$request->specialist_uz,

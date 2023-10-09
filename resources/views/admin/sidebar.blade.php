@@ -20,20 +20,12 @@
             <a href="{{ route('admin.directors.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Rahbariyat</span></a>
           </li>
           <li class="dropdown">
-            <a href="{{ route('admin.teachers.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Ustozlar</span></a>
+            <a href="{{ route('admin.teachers.index') }}" class="nav-link"><i data-feather="monitor"></i><span>O'qituvchilar</span></a>
           </li>
+          
           <li class="dropdown">
-            <a href="{{ route('admin.schoolName.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Maktabning Raqami</span></a>
+            <a href="{{ route('admin.categories.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Toifa</span></a>
           </li>
-          <li class="dropdown">
-            <a href="{{ route('admin.categories.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Categories</span></a>
-          </li>
-          {{-- <li class="dropdown">
-            <a href="{{ route('admin.lessons.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Qo'shimcha darslar</span></a>
-          </li> --}}
-          {{-- <li class="dropdown">
-            <a href="{{ route('admin.sports.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Sport to'garaklar</span></a>
-          </li> --}}
           <li class="dropdown">
             <a href="{{ route('admin.tasks.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Maktab Vazifalari</span></a>
           </li>
@@ -67,6 +59,9 @@
         </li>
         <li class="dropdown">
           <a href="{{ route('admin.galleries.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Maktab galereyasi</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="{{ route('admin.ads.index') }}" class="nav-link"><i data-feather="monitor"></i><span>Reklama bo'limi</span></a>
         </li>
         <hr>
         <li class="dropdown">

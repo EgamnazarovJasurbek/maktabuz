@@ -39,8 +39,8 @@
                                         @foreach ($requisites as $requisite)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $requisite->title_uz }}</td>
-                                                <td>{{ $requisite->recipient_oz }}</td>
+                                                <td>{!! \Str::limit($requisite->title_uz,30) !!}</td>
+                                                <td>{!! \Str::limit($requisite->recipient_uz,30) !!}</td>
                                                 <td>{{ $requisite->bank_name_uz }}</td>
                                                 <td>{{ $requisite->tin }}</td>
                                                

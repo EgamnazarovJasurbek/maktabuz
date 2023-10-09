@@ -45,8 +45,8 @@
                         <div class="row">
                             @foreach ($faqs as $faq)
                                 <div class="col-12" style="border: 1px solid #ece1e1; padding: 20px;">
-                                    <a href="">{{ $faq->title_uz }}</a>
-                                    <p class="faq_answer">{{ $faq->body_uz }}</p>
+                                    <a href="">{{ $faq['title_' . \App::getLocale()] }}</a>
+                                    <p class="faq_answer">{{ $faq['body_' . \App::getLocale()] }}</p>
                                 </div>
                             @endforeach
                         </div>

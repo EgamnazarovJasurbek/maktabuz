@@ -58,14 +58,15 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <div class="titleBox">
-                                    <h1>{{ $new->title_1_uz }}</h1>
+                                    <h1>{{ $new['title_' . \App::getLocale()] }}</h1>
+                                   
                                     <span> {{ $new->created_at->format(' d.M.Y')}} </span>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <div class="titleBox_img">
-                                    <img alt="image" src="/news/images/{{ $new->image }}" width="70%">
-                                </div>
+                                    <img alt="image" src="{{ asset('news/images/' . $new->image) }}" width="70%">
+                                </div> 
                             </div>
                         </div>
 
@@ -75,7 +76,7 @@
                     <div class="news__detail-text">
                         <div class="row">
                             <div class="col-12 text-justify fw-medium">
-                                <p>{{ $new->body_uz }}</p>
+                                <p>{{ $new['body_uz' . \App::getLocale()] }}</p>
                             </div>
                         </div>
                     </div>

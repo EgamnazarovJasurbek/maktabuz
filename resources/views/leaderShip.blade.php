@@ -123,10 +123,10 @@
                 <div class="container">
                     @foreach ($directors as $director)
                         <a href="{{ route('leaderShipDetail', $director->id) }}" class="mainLeader">
-                            <img alt="Director" src="/directors/images/{{ $director->image }}" height="450px">
+                            <img alt="Director" src="{{ asset('directors/images/' .$director->image) }}" height="450px"> 
                             <div class="details">
-                                <h1>{{ $director->name_uz }}</h1>
-                                <span>{{ $director->specialist_uz }}</span>
+                                <h1>{{ $director['name_' . \App::getLocale()] }}</h1>
+                                <span>{{ $director['specialist_' . \App::getLocale()] }}</span>
                             </div>
                         </a>
                     @endforeach
@@ -141,11 +141,11 @@
                         @foreach ($leaderShips as $leaderShip)
                             <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                                 <a href="{{ route('leaderShipDetail', $leaderShip->id) }}" class="deputy_director-main">
-                                    <img src="directors/images/{{ $leaderShip->image }}" width="60%" height="85%"
+                                    <img src="{{ asset('directors/images/' .$leaderShip->image) }}" width="80%" height="75%"
                                         alt="Zam Director">
                                     <div class="deputy_director-details">
-                                        <h1>{{ $leaderShip->name_uz }}</h1>
-                                        <span>{{ $leaderShip->specialist_uz }}</span>
+                                        <h1>{{ $leaderShip['name_' . \App::getLocale()] }}</h1>
+                                        <span>{{ $leaderShip['specialist_' . \App::getLocale()] }}</span>
                                     </div>
                                 </a>
                             </div>

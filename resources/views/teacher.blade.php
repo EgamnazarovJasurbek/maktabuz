@@ -34,7 +34,6 @@
             </header>
             <!-- Header End -->
 
-
             <!-- Main section Start -->
             <main>
                 <section>
@@ -46,11 +45,11 @@
                                 @foreach ($oliyToifa as $oliyT)
                                     <div class="col-lg-4 col-md-3 col-sm-6">
                                         <a href="{{ route('teacherDetail', $oliyT->id) }}" class="deputy_director-main">
-                                            <img src="/teachers/images/{{ $oliyT->image }}" width="90%" height="500px"
+                                            <img src="{{ asset('teachers/images/' . $oliyT->image) }}" width="90%" height="500px"
                                                 alt="Zam Director">
                                             <div class="deputy_director-details">
-                                                <h1>{{ $oliyT->name_uz }}</h1>
-                                                <span>{{ $oliyT->specialist_uz }}</span>
+                                                <h1>{{ $oliyT['name_' . \App::getLocale()] }}</h1>
+                                                <span>{{ $oliyT['specialist_' . \App::getLocale()] }}</span>
                                             </div>
                                         </a>
 
@@ -68,11 +67,11 @@
                             @foreach ($brnciToifa as $firstToifa)
                                 <div class="col-lg-4 col-md-3 col-sm-6">
                                     <a href="{{ route('teacherDetail', $firstToifa->id) }}" class="deputy_director-main">
-                                        <img src="/teachers/images/{{ $firstToifa->image }}" width="90%" height="500px"
+                                        <img src="{{ asset('teachers/images/' . $firstToifa->image) }}" width="90%" height="500px"
                                             alt="Zam Director">
                                         <div class="deputy_director-details">
-                                            <h1>{{ $firstToifa->name_uz }}</h1>
-                                            <span>{{ $firstToifa->specialist_uz }}</span>
+                                            <h1>{{ $firstToifa['name_' . \App::getLocale()] }} </h1>
+                                            <span>{{ $firstToifa['specialist_' . \App::getLocale()] }}</span>
                                         </div>
                                     </a>
                                 </div>
@@ -86,11 +85,11 @@
                             @foreach ($ikinciToifa as $secondToifa)
                                 <div class="col-lg-4 col-md-3 col-sm-6">
                                     <a href="{{ route('teacherDetail', $secondToifa->id) }}" class="deputy_director-main">
-                                        <img src="/teachers/images/{{ $secondToifa->image }}" width="90%" height="500px"
+                                        <img src="{{ asset('teachers/images/' . $secondToifa->image) }}" width="90%" height="500px"
                                             alt="Zam Director">
                                         <div class="deputy_director-details">
-                                            <h1>{{ $secondToifa->name_uz }}</h1>
-                                            <span>{{ $secondToifa->specialist_uz }}</span>
+                                            <h1>{{ $secondToifa['name_' . \App::getLocale()] }} </h1>
+                                            <span>{{ $secondToifa['specialist_' . \App::getLocale()] }}</span>
                                         </div>
                                     </a>
                                 </div>
@@ -105,11 +104,11 @@
                                 <div class="col-lg-4 col-md-3 col-sm-6">
                                     <a href="{{ route('teacherDetail', $mutaxasisToifa->id) }}"
                                         class="deputy_director-main">
-                                        <img src="/teachers/images/{{ $mutaxasisToifa->image }}" width="90%"
+                                        <img src="{{ asset('teachers/images/' . $mutaxasisToifa->image) }}" width="90%"
                                             height="500px" alt="Zam Director">
                                         <div class="deputy_director-details">
-                                            <h1>{{ $mutaxasisToifa->name_uz }}</h1>
-                                            <span>{{ $mutaxasisToifa->specialist_uz }}</span>
+                                            <h1>{{ $mutaxasisToifa['name_' . \App::getLocale()] }} </h1>
+                                            <span>{{ $mutaxasisToifa['specialist_' . \App::getLocale()] }}</span>
                                         </div>
                                     </a>
                                 </div>

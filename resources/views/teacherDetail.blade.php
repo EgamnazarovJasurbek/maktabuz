@@ -107,21 +107,20 @@
 
                 <!-- Rahbariyat Detail -->
                 <div class="container">
-
                     <div class="leaderInfo">
                         <div class="photo">
-                            <img alt="image" src="/teachers/images/{{ $teachers->image }}" height="450px">
+                            <img alt="image" src="{{ asset('teachers/images/'. $teachers->image) }}" height="500px">
                         </div>
 
                         <div class="description">
-                            <h1 class="staffTitle">{{ $teachers->name_uz  }}</h1>
+                            <h1 class="staffTitle">{{ $teachers['name_' . \App::getLocale()]  }}</h1>
 
-                            <h2>{{ $teachers->specialist_uz }}</h2>
+                            <h2>{{ $teachers['specialist_' . \App::getLocale()] }}</h2>
 
                             <div class="contactInfo">
                                 <div>
                                     <i class="far fa-clock"></i>
-                                    <span>{{ $teachers->class_time_uz  }}</span>
+                                    <span>{{ $teachers['class_time_' . \App::getLocale()]  }}</span>
                                 </div>
 
                                 <div>
@@ -132,17 +131,6 @@
                                 <div>
                                     <i class="far fa-envelope-open"></i>
                                     <a href="mailto:school329@xtv.uz">{{ $teachers->email }}</a>
-                                </div>
-                            </div>
-
-
-
-                            <div class="collapseBox">
-                                <a data-toggle="collapse" href="#collapseExample" role="button">Biografiya</a>
-
-                                <div class="collapse" id="collapseExample">
-                                    <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste a,
-                                        earum commodi accusantium officiis id.</div>
                                 </div>
                             </div>
                         </div>

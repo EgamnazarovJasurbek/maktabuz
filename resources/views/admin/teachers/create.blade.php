@@ -118,14 +118,7 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                {{-- <div class="form-group">
-                                    <label>Toifasi</label>
-                                    <input type="text" class="form-control" name="category"
-                                        value="{{ old('category') }}">
-                                    @error('category')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div> --}}
+                              
                                 <div class="form-group">
                                     <label>Toifa kiriting</label>
                                     <select name="category_id" id="" class="form-control">

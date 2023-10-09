@@ -31,11 +31,24 @@
     <!-- Custom style for this template -->
     <link rel="stylesheet" href="{{ asset('allStyle/css/style.css') }}">
     <!-- Responsive Style -->
-    <link rel="stylesheet" href="{{ asset('allStyle/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('allStyle/css/responsive.css') }}">
 </head>
 
 
 <body>
+    {{-- Reklama bo'limi Start --}}
+    @foreach ($ads as $ad)
+        <a href="{{ $ad->url }}">
+            <div class="ads">
+                <img src="{{ asset('/ads/images/' . $ad->image) }}" alt="Ads">
+            </div>
+        </a>
+    @endforeach
+
+    {{-- Reklama bo'limi End --}}
+
+
+
     <!-- Header Start -->
     <header>
         <div class="bannerBox">
@@ -43,9 +56,9 @@
             <div class="headerBar">
                 <div class="topMainMenu">
                     <a href="{{ route('index') }}" class="topMain-logo">
-                        <img src="allStyle/image/Gerb.png" alt="" width="8%">
+                        <img src="{{ asset('/allStyle/image/Gerb.png') }}" alt="" width="8%">
                         @foreach ($schoolName as $name)
-                        <p>{{ $name->name_uz }}</p>
+                            <p>{{ $name['name_' . \App::getLocale()] }}</p>
                         @endforeach
                     </a>
                     <ul>
@@ -63,7 +76,6 @@
                         </li>
                     </ul>
                     <div class="additionalFuntions">
-                        <a href="#" class="eye"><i class="fa-regular fa-eye text-white me-2"></i></a>
                         <a href="#" class="searchBtn text-white">|
                             <i class="fa-solid fa-magnifying-glass text-white mb-3 ms-2"></i>
                         </a>
@@ -79,7 +91,7 @@
                             <div class="overlay">
                                 <div class="container">
                                     <div class="topLogoGerb">
-                                        <img src="/allStyle/image/Gerb.png" alt="Logo" width="13%">
+                                        <img src="{{ asset('/allStyle/image/Gerb.png') }}" alt="Logo" width="13%">
                                     </div>
                                     <div class="listMenu">
                                         <ul>
@@ -202,8 +214,8 @@
                                     </ul>
                                 </div>
                                 <!-- Search Start-->
-                                <form id="w2" method="GET" class="mainSearchForm" action="{{ route('search') }}"
-                                    method="get">
+                                <form id="w2" method="GET" class="mainSearchForm"
+                                    action="{{ route('search') }}" method="get">
                                     <div class="input-group">
                                         <input type="text" name="key" id="mainSearch" class="form-control"
                                             placeholder="Izlash" name="ContentSearch">
@@ -223,7 +235,7 @@
                                         data-toggle="dropdown">{{ \App::getLocale() }}</button>
                                     <div id="" class="dropdown-menu-right dropdown-menu">
                                         <li><a class="active" href="/lang/uz">O'zbekcha</a></li>
-                                        <li><a class="" href="/lang/Ўз">Ўзбекча</a></li>
+                                        <li><a class="" href="/lang/oz">Ўзбекча</a></li>
                                         <li><a class="" href="/lang/ru">Русский</a></li>
                                         <li><a class="" href="/lang/en">English</a></li>
 
@@ -280,19 +292,19 @@
                         </div>
                         <div class="footer_logo">
                             <span>
-                                <img src="/allStyle/image/Gerb.png" alt="Logo" width="20%">
+                                <img src="{{ asset('/allStyle/image/Gerb.png') }}" alt="Logo" width="20%">
                             </span>
                             @foreach ($schoolName as $name)
                                 <a href="">
-                                    {{ $name->name_uz }}
-                                    <i>{{ $name->city_uz }}</i>
+                                    {{ $name['name_' . \App::getLocale()] }}
+                                    <i>{{ $name['city_' . \App::getLocale()] }}</i>
                                 </a>
                             @endforeach
                         </div>
 
 
                         <a href="#" class="it_live-logo">
-                            <img src="/allStyle/image/It live logo for red-04-04.png" alt="IT_Live"
+                            <img src="{{ asset('/allStyle/image/It live logo for red-04-04.png') }}" alt="IT_Live"
                                 class="it_live-img">
                         </a>
                         <span class="year_text">
@@ -306,11 +318,11 @@
 </body>
 
 <!-- Js -->
-<script src="/allStyle/js/bootstrap.js"></script>
+<script src="{{ asset('/allStyle/js/bootstrap.js') }}"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="/allStyle/js/tilt.jquery.js"></script>
-<script src="/allStyle/js/wow.min.js"></script>
+<script src="{{ asset('/allStyle/js/tilt.jquery.js') }}"></script>
+<script src="{{ asset('/allStyle/js/wow.min.js') }}"></script>
 
 <!-- Js -->
 

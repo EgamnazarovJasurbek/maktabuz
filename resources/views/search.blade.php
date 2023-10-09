@@ -63,9 +63,9 @@
                                 <div class="col-xl-4 col-lg-4 col-md-6">
                                     <a href="{{ route('detailNew', $new->id) }}">
                                         <div class="imageBox">
-                                            <img alt="image" src="/news/images/{{ $new->image }}">
+                                            <img alt="image" src="{{ asset('news/images/' . $new->image ) }}">  
                                         </div>
-                                        <h1>{{ $new->title_1_uz }}
+                                        <h1>{{ $new['title_' . \App::getLocale()] }}
                                         </h1>
                                         <span>{{ $new->created_at->format(' d.M.Y') }}</span>
                                     </a>

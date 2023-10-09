@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
-
+    
     /**
      * Bootstrap any application services.
      */
@@ -23,6 +23,11 @@ class AppServiceProvider extends ServiceProvider
             $schoolName = \App\Models\SchoolName::all();
             $view->with(compact('schoolName'));
         });
+        view()->composer('layouts.site',function($view){
+            $ads = \App\Models\Ad::all();
+            $view->with(compact('ads'));
+        });
+        
         Paginator::useBootstrap();
     }
 }

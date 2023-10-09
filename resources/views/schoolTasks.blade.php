@@ -87,7 +87,7 @@
 
                 <ul class="tasksListWithTicks">
                     @foreach ($tasks as $task)
-                    <li>{{ $task->body_uz }}</li>
+                    <li>{{ $task['body_' . \App::getLocale()] }}</li>
                     @endforeach
                 </ul>
             </div>

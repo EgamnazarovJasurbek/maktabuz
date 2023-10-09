@@ -109,18 +109,18 @@
 
                 <div class="leaderInfo">
                     <div class="photo">
-                        <img alt="image" src="/lessons/images/{{ $education->image }}" class="mt-5 me-4">
+                        <img alt="image" src="{{ asset('lessons/images/'. $education->image) }}" class="mt-5 me-4">
                     </div>
 
                     <div class="description">
-                        <h1 class="staffTitle mb-4"><b class="me-1">{{ $education->teacher_uz }}</h1>
-
+                        <h1 class="staffTitle mb-4"><b class="me-1">{{ $education['teacher_' . \App::getLocale()] }}</h1>
+                         
 
 
                         <div class="contactInfo">
                             <div>
                                 <i class="fa-solid fa-door-open"></i>
-                                <span>{{ $education->week_oz }}</span>
+                                <span>{{ $education['week_' . \App::getLocale()] }}</span>
                             </div>
 
                             <div>
@@ -135,7 +135,7 @@
 
                             <div>
                                 <i class="fa-solid fa-child"></i>
-                                <a href="mailto:school329@xtv.uz">{{ $education->class_uz }}</a>
+                                <a href="mailto:school329@xtv.uz">{{ $education['class_' . \App::getLocale()] }}</a>
                             </div>
                         </div>
                     </div>

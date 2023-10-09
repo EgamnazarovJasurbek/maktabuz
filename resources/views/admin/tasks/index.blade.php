@@ -39,8 +39,8 @@
                                         @foreach ($tasks as $task)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $task->body_oz }}</td>
-                                                <td>{{ $task->body_uz }}</td>
+                                                <td>{!! \Str::limit($task->body_uz,50) !!}</td>
+                                                <td>{!! \Str::limit($task->body_uz,50) !!}</td>
                                                 <td>{{ $task->created_at }}</td>
                                               
                                                 <td>

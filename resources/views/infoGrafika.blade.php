@@ -49,7 +49,7 @@
                         <div class="item">
                             <a href="#">
                                 <div class="imageBox">
-                                    <img src="allstyle/image/InfoGrafika-1.jpg" onclick="showImageOverlay(this)">
+                                    <img src="{{ asset('allstyle/image/InfoGrafika-1.jpg') }}" onclick="showImageOverlay(this)">
                                 </div>
                                 <div class="descriptionBox">
                                     <h1>Axborot tizimlari va elektron resurslar</h1>
@@ -60,7 +60,7 @@
                         <div class="item">
                             <a href="#">
                                 <div class="imageBox">
-                                    <img src="allstyle/image/InfoGrafika-2.jpg" onclick="showImageOverlay(this)">
+                                    <img src="{{ asset('allstyle/image/InfoGrafika-2.jpg') }}" onclick="showImageOverlay(this)">
                                 </div>
                                 <div class="descriptionBox">
                                     <h1>Axborot tizimlari va elektron resurslar</h1>
@@ -71,7 +71,7 @@
                         <div class="item">
                             <a href="#">
                                 <div class="imageBox">
-                                    <img src="allstyle/image/InfoGrafika-3.jpg" onclick="showImageOverlay(this)">
+                                    <img src="{{ asset('allstyle/image/InfoGrafika-3.jpg') }}" onclick="showImageOverlay(this)">
                                 </div>
                                 <div class="descriptionBox">
                                     <h1>Axborot tizimlari va elektron resurslar</h1>

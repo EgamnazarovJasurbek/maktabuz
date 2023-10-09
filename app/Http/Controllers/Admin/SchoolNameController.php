@@ -90,6 +90,16 @@ class SchoolNameController extends Controller
 
         ]);
         $schoolName = SchoolName::findOrFail($id);
+      
+        if($request->hasFile('image')){
+            if(File::exists('schoolName/images/'.$schoolName->image)){
+                File::delete('schoolName/images/'.$schoolName->image);  
+            } 
+            $file = $request->file('image');
+            $schoolName->image = time().'_'.$file->getClientOriginalName();
+            $file->move(\public_path('schoolName/images/'),$schoolName->image);
+            $request['image']=$schoolName->image;
+        }
 
         $schoolName->update([
             "name_uz" => $request->name_uz,

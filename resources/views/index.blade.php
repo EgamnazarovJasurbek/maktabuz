@@ -2,7 +2,7 @@
 @section('content')
     <!-- Big logo start -->
     @foreach ($schoolName as $name)
-        <div class="bigBannerContent" style="background-image: url({{ asset('schoolName/images/'. $name->image ) }});">
+        <div class="bigBannerContent" style="background-image: url({{ asset('/schoolName/images/'. $name->image ) }});">
             <div class="bannerContent">
                 <div class="container-fluid">
                     <div class="row">
